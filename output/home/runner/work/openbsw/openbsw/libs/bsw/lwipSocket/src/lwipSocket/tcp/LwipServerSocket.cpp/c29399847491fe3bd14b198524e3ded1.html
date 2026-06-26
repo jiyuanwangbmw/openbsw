@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../../libs.html">libs</a></li>
+        
+        <li><a href="../../../../../../bsw.html">bsw</a></li>
+        
+        <li><a href="../../../../../lwipSocket.html">lwipSocket</a></li>
+        
+        <li><a href="../../../../src.html">src</a></li>
+        
+        <li><a href="../../../lwipSocket.html">lwipSocket</a></li>
+        
+        <li ><a href="../../tcp.html">tcp</a>
+            </li>
+
+        
+        <li class="active"><a href="../LwipServerSocket.cpp.html">LwipServerSocket.cpp</a>:138
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">tcp::LwipServerSocket::tcpAcceptListener(void*, tcp_pcb*, signed char)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x00019c54</td>
+                <td>
+    
+    
+</td>
+                <td>32 (static)</td>
+                <td>228</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>No Callers</th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (9,
+                            <span title="sum of used bytes by all callees">
+                            Σ=316
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="../../utils/FilterFrame.cpp/193c6ad0543ca5f0ce7ebf83385e6aa1.html">lwiputils::from_lwipIp(ip4_addr const&amp;) (40)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../util/include/util/logger/Logger.h/36d1ae1365862a45a74fa55e9d725fcd.html">util::logger::Logger::debug(unsigned char, char const*, ...) (56)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../LwipSocket.cpp/2f7a0f7759675e9711cf9a927ba108e3.html">tcp::LwipSocket::open(tcp_pcb*) (80)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../3rdparty/lwip/src/core/tcp.c/af07abf8bd8511afd7b4df66f57815db.html">tcp_arg (8)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../3rdparty/lwip/src/core/tcp.c/f8eaea74a929b5b641432769dfd841d1.html">tcp_sent (8)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../3rdparty/lwip/src/core/tcp.c/8ac3003586a7101c9fb805d3d2ca644f.html">tcp_recv (8)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../3rdparty/lwip/src/core/tcp.c/c6d024ec249c992e04afa078681a68df.html">tcp_err (8)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../3rdparty/lwip/src/core/tcp.c/c4f6cd5715099ae06770ac478f854441.html">tcp_poll (20)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../util/include/util/logger/Logger.h/e675253f5bfedd299c26bd0145e28698.html">util::logger::Logger::error(unsigned char, char const*, ...) (88)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="./3b75437cf0f44cbd153f619c067f2bc9.html">tcp::LwipServerSocket::accept() (152)</a></pre>
+    
+
+    <pre>
+
+    tcp::LwipServerSocket::tcpAcceptListener(void*, tcp_pcb*, signed char):
+
+       19c54:	b570      	push	{r4, r5, r6, lr}
+
+       19c56:	b084      	sub	sp, #16
+
+       19c58:	2a00      	cmp	r2, #0
+
+       19c5a:	d145      	bne.n	19ce8 <<a href="./c29399847491fe3bd14b198524e3ded1.html">tcp::LwipServerSocket::tcpAcceptListener(void*, tcp_pcb*, signed char)</a>+0x94>
+
+       19c5c:	4605      	mov	r5, r0
+
+       19c5e:	2800      	cmp	r0, #0
+
+       19c60:	d04e      	beq.n	19d00 <<a href="./c29399847491fe3bd14b198524e3ded1.html">tcp::LwipServerSocket::tcpAcceptListener(void*, tcp_pcb*, signed char)</a>+0xac>
+
+       19c62:	6883      	ldr	r3, [r0, #8]
+
+       19c64:	460c      	mov	r4, r1
+
+       19c66:	2b00      	cmp	r3, #0
+
+       19c68:	d038      	beq.n	19cdc <<a href="./c29399847491fe3bd14b198524e3ded1.html">tcp::LwipServerSocket::tcpAcceptListener(void*, tcp_pcb*, signed char)</a>+0x88>
+
+       19c6a:	466e      	mov	r6, sp
+
+       19c6c:	4630      	mov	r0, r6
+
+       19c6e:	1d21      	adds	r1, r4, #4
+
+       19c70:	f001 fc46 	bl	1b500 <<a href="../../utils/FilterFrame.cpp/193c6ad0543ca5f0ce7ebf83385e6aa1.html">lwiputils::from_lwipIp(ip4_addr const&)</a>>
+
+       19c74:	68a8      	ldr	r0, [r5, #8]
+
+       19c76:	8b22      	ldrh	r2, [r4, #24]
+
+       19c78:	6803      	ldr	r3, [r0, #0]
+
+       19c7a:	4631      	mov	r1, r6
+
+       19c7c:	689b      	ldr	r3, [r3, #8]
+
+       19c7e:	4798      	blx	r3
+
+       19c80:	4b23      	ldr	r3, [pc, #140]	@ (19d10 <<a href="./c29399847491fe3bd14b198524e3ded1.html">tcp::LwipServerSocket::tcpAcceptListener(void*, tcp_pcb*, signed char)</a>+0xbc>)
+
+       19c82:	4606      	mov	r6, r0
+
+       19c84:	7818      	ldrb	r0, [r3, #0]
+
+       19c86:	2e00      	cmp	r6, #0
+
+       19c88:	d036      	beq.n	19cf8 <<a href="./c29399847491fe3bd14b198524e3ded1.html">tcp::LwipServerSocket::tcpAcceptListener(void*, tcp_pcb*, signed char)</a>+0xa4>
+
+       19c8a:	88aa      	ldrh	r2, [r5, #4]
+
+       19c8c:	4921      	ldr	r1, [pc, #132]	@ (19d14 <<a href="./c29399847491fe3bd14b198524e3ded1.html">tcp::LwipServerSocket::tcpAcceptListener(void*, tcp_pcb*, signed char)</a>+0xc0>)
+
+       19c8e:	f7ee fdb3 	bl	87f8 <<a href="../../../../../util/include/util/logger/Logger.h/36d1ae1365862a45a74fa55e9d725fcd.html">util::logger::Logger::debug(unsigned char, char const*, ...)</a>>
+
+       19c92:	7a63      	ldrb	r3, [r4, #9]
+
+       19c94:	f043 0304 	orr.w	r3, r3, #4
+
+       19c98:	7263      	strb	r3, [r4, #9]
+
+       19c9a:	4621      	mov	r1, r4
+
+       19c9c:	4630      	mov	r0, r6
+
+       19c9e:	f000 fc35 	bl	1a50c <<a href="../LwipSocket.cpp/2f7a0f7759675e9711cf9a927ba108e3.html">tcp::LwipSocket::open(tcp_pcb*)</a>>
+
+       19ca2:	4631      	mov	r1, r6
+
+       19ca4:	4620      	mov	r0, r4
+
+       19ca6:	f002 ff2f 	bl	1cb08 <<a href="../../../../../../3rdparty/lwip/src/core/tcp.c/af07abf8bd8511afd7b4df66f57815db.html">tcp_arg</a>>
+
+       19caa:	491b      	ldr	r1, [pc, #108]	@ (19d18 <<a href="./c29399847491fe3bd14b198524e3ded1.html">tcp::LwipServerSocket::tcpAcceptListener(void*, tcp_pcb*, signed char)</a>+0xc4>)
+
+       19cac:	4620      	mov	r0, r4
+
+       19cae:	f002 ff33 	bl	1cb18 <<a href="../../../../../../3rdparty/lwip/src/core/tcp.c/f8eaea74a929b5b641432769dfd841d1.html">tcp_sent</a>>
+
+       19cb2:	491a      	ldr	r1, [pc, #104]	@ (19d1c <<a href="./c29399847491fe3bd14b198524e3ded1.html">tcp::LwipServerSocket::tcpAcceptListener(void*, tcp_pcb*, signed char)</a>+0xc8>)
+
+       19cb4:	4620      	mov	r0, r4
+
+       19cb6:	f002 ff2b 	bl	1cb10 <<a href="../../../../../../3rdparty/lwip/src/core/tcp.c/8ac3003586a7101c9fb805d3d2ca644f.html">tcp_recv</a>>
+
+       19cba:	4919      	ldr	r1, [pc, #100]	@ (19d20 <<a href="./c29399847491fe3bd14b198524e3ded1.html">tcp::LwipServerSocket::tcpAcceptListener(void*, tcp_pcb*, signed char)</a>+0xcc>)
+
+       19cbc:	4620      	mov	r0, r4
+
+       19cbe:	f002 ff2f 	bl	1cb20 <<a href="../../../../../../3rdparty/lwip/src/core/tcp.c/c6d024ec249c992e04afa078681a68df.html">tcp_err</a>>
+
+       19cc2:	4918      	ldr	r1, [pc, #96]	@ (19d24 <<a href="./c29399847491fe3bd14b198524e3ded1.html">tcp::LwipServerSocket::tcpAcceptListener(void*, tcp_pcb*, signed char)</a>+0xd0>)
+
+       19cc4:	2201      	movs	r2, #1
+
+       19cc6:	4620      	mov	r0, r4
+
+       19cc8:	f002 ff34 	bl	1cb34 <<a href="../../../../../../3rdparty/lwip/src/core/tcp.c/c4f6cd5715099ae06770ac478f854441.html">tcp_poll</a>>
+
+       19ccc:	68a8      	ldr	r0, [r5, #8]
+
+       19cce:	6803      	ldr	r3, [r0, #0]
+
+       19cd0:	4631      	mov	r1, r6
+
+       19cd2:	68db      	ldr	r3, [r3, #12]
+
+       19cd4:	4798      	blx	r3
+
+       19cd6:	2000      	movs	r0, #0
+
+       19cd8:	b004      	add	sp, #16
+
+       19cda:	bd70      	pop	{r4, r5, r6, pc}
+
+       19cdc:	4b12      	ldr	r3, [pc, #72]	@ (19d28 <<a href="./c29399847491fe3bd14b198524e3ded1.html">tcp::LwipServerSocket::tcpAcceptListener(void*, tcp_pcb*, signed char)</a>+0xd4>)
+
+       19cde:	4668      	mov	r0, sp
+
+       19ce0:	681b      	ldr	r3, [r3, #0]
+
+       19ce2:	466e      	mov	r6, sp
+
+       19ce4:	4798      	blx	r3
+
+       19ce6:	e7c1      	b.n	19c6c <<a href="./c29399847491fe3bd14b198524e3ded1.html">tcp::LwipServerSocket::tcpAcceptListener(void*, tcp_pcb*, signed char)</a>+0x18>
+
+       19ce8:	4b09      	ldr	r3, [pc, #36]	@ (19d10 <<a href="./c29399847491fe3bd14b198524e3ded1.html">tcp::LwipServerSocket::tcpAcceptListener(void*, tcp_pcb*, signed char)</a>+0xbc>)
+
+       19cea:	4910      	ldr	r1, [pc, #64]	@ (19d2c <<a href="./c29399847491fe3bd14b198524e3ded1.html">tcp::LwipServerSocket::tcpAcceptListener(void*, tcp_pcb*, signed char)</a>+0xd8>)
+
+       19cec:	7818      	ldrb	r0, [r3, #0]
+
+       19cee:	f7ee fc57 	bl	85a0 <<a href="../../../../../util/include/util/logger/Logger.h/e675253f5bfedd299c26bd0145e28698.html">util::logger::Logger::error(unsigned char, char const*, ...)</a>>
+
+       19cf2:	f04f 30ff 	mov.w	r0, #4294967295	@ 0xffffffff
+
+       19cf6:	e7ef      	b.n	19cd8 <<a href="./c29399847491fe3bd14b198524e3ded1.html">tcp::LwipServerSocket::tcpAcceptListener(void*, tcp_pcb*, signed char)</a>+0x84>
+
+       19cf8:	490d      	ldr	r1, [pc, #52]	@ (19d30 <<a href="./c29399847491fe3bd14b198524e3ded1.html">tcp::LwipServerSocket::tcpAcceptListener(void*, tcp_pcb*, signed char)</a>+0xdc>)
+
+       19cfa:	f7ee fd7d 	bl	87f8 <<a href="../../../../../util/include/util/logger/Logger.h/36d1ae1365862a45a74fa55e9d725fcd.html">util::logger::Logger::debug(unsigned char, char const*, ...)</a>>
+
+       19cfe:	e7f8      	b.n	19cf2 <<a href="./c29399847491fe3bd14b198524e3ded1.html">tcp::LwipServerSocket::tcpAcceptListener(void*, tcp_pcb*, signed char)</a>+0x9e>
+
+       19d00:	4b03      	ldr	r3, [pc, #12]	@ (19d10 <<a href="./c29399847491fe3bd14b198524e3ded1.html">tcp::LwipServerSocket::tcpAcceptListener(void*, tcp_pcb*, signed char)</a>+0xbc>)
+
+       19d02:	490c      	ldr	r1, [pc, #48]	@ (19d34 <<a href="./c29399847491fe3bd14b198524e3ded1.html">tcp::LwipServerSocket::tcpAcceptListener(void*, tcp_pcb*, signed char)</a>+0xe0>)
+
+       19d04:	7818      	ldrb	r0, [r3, #0]
+
+       19d06:	f7ee fc4b 	bl	85a0 <<a href="../../../../../util/include/util/logger/Logger.h/e675253f5bfedd299c26bd0145e28698.html">util::logger::Logger::error(unsigned char, char const*, ...)</a>>
+
+       19d0a:	f06f 000f 	mvn.w	r0, #15
+
+       19d0e:	e7e3      	b.n	19cd8 <<a href="./c29399847491fe3bd14b198524e3ded1.html">tcp::LwipServerSocket::tcpAcceptListener(void*, tcp_pcb*, signed char)</a>+0x84>
+
+       19d10:	20000023 	.word	0x20000023
+
+       19d14:	00032edc 	.word	0x00032edc
+
+       19d18:	0001a441 	.word	0x0001a441
+
+       19d1c:	0001a729 	.word	0x0001a729
+
+       19d20:	0001a811 	.word	0x0001a811
+
+       19d24:	0001a411 	.word	0x0001a411
+
+       19d28:	20000000 	.word	0x20000000
+
+       19d2c:	00032e0c 	.word	0x00032e0c
+
+       19d30:	00032e80 	.word	0x00032e80
+
+       19d34:	00032e4c 	.word	0x00032e4c
+
+    </pre>
+
+    
+    <pre><a href="./1aceef4959a77e937b267152e5dac48e.html">tcp::LwipServerSocket::bind(ip::IPAddress const&amp;, unsigned short) (344)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 116</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 236</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    116
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                48 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    236
+                    
+                    
+                </td>
+                <td class="col_size">68</td>
+                <td><a href="../../../../../util/src/util/logger/Logger.cpp/d658d7c78dcca1ca01e61ef198b3eeaa.html" class="icon-function">util::logger::Logger::doLog(unsigned char, util::logger::Level, char const*, std::__va_list)</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    68
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                20 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    168
+                    
+                    
+                </td>
+                <td class="col_size">88</td>
+                <td><a href="../../../../../util/include/util/logger/Logger.h/e675253f5bfedd299c26bd0145e28698.html" class="icon-function">util::logger::Logger::error(unsigned char, char const*, ...)</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                    
+                    48
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">80</td>
+                <td><a href="../LwipSocket.cpp/2f7a0f7759675e9711cf9a927ba108e3.html" class="icon-function">tcp::LwipSocket::open(tcp_pcb*)</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">32
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+            <p>No callers for this function.</p>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

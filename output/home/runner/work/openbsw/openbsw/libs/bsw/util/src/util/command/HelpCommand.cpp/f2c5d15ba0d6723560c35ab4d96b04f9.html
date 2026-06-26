@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../../libs.html">libs</a></li>
+        
+        <li><a href="../../../../../../bsw.html">bsw</a></li>
+        
+        <li><a href="../../../../../util.html">util</a></li>
+        
+        <li><a href="../../../../src.html">src</a></li>
+        
+        <li><a href="../../../util.html">util</a></li>
+        
+        <li ><a href="../../command.html">command</a>
+            </li>
+
+        
+        <li class="active"><a href="../HelpCommand.cpp.html">HelpCommand.cpp</a>:117
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">util::command::HelpCommand::CallbackHelper::printDescription(char const*)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x00014524</td>
+                <td>
+    
+    
+</td>
+                <td>32 (static)</td>
+                <td>140</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="./c7c3242828d980f5c6709814e1f7a544.html">util::command::HelpCommand::CallbackHelper::startCommand(char const*, char const*, bool) (144)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (2,
+                            <span title="sum of used bytes by all callees">
+                            Σ=48
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="../../format/StringWriter.cpp/03aebf6331ff8b3f51ee4a5bd2467e06.html">util::format::StringWriter::write(util::string::ConstString const&amp;) (32)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../format/StringWriter.cpp/608a21799fb0c463e4cd3beadb74ab09.html">util::format::StringWriter::write(char) (16)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="../../../../../../3rdparty/etl/include/etl/private/delegate_cpp11.h/db7bbe71c9b9b5c99a1bf591e38ba1da.html">void etl::delegate&lt;void (util::command::CommandContext&amp;)&gt;::const_method_stub&lt;util::command::HelpCommand, &amp;(util::command::HelpCommand::help(util::command::CommandContext&amp;) const)&gt;(etl::delegate&lt;void (util::command::CommandContext&amp;)&gt;::invocation_element const&amp;, util::command::CommandContext&amp;) (8)</a></pre>
+    
+
+    <pre>
+
+    util::command::HelpCommand::CallbackHelper::printDescription(char const*):
+
+       14524:	e92d 41f0 	stmdb	sp!, {r4, r5, r6, r7, r8, lr}
+
+       14528:	f8d0 8004 	ldr.w	r8, [r0, #4]
+
+       1452c:	780b      	ldrb	r3, [r1, #0]
+
+       1452e:	b082      	sub	sp, #8
+
+       14530:	460d      	mov	r5, r1
+
+       14532:	4606      	mov	r6, r0
+
+       14534:	460c      	mov	r4, r1
+
+       14536:	f242 4701 	movw	r7, #9217	@ 0x2401
+
+       1453a:	2b0d      	cmp	r3, #13
+
+       1453c:	d82d      	bhi.n	1459a <<a href="./f2c5d15ba0d6723560c35ab4d96b04f9.html">util::command::HelpCommand::CallbackHelper::printDescription(char const*)</a>+0x76>
+
+       1453e:	fa27 f303 	lsr.w	r3, r7, r3
+
+       14542:	07db      	lsls	r3, r3, #31
+
+       14544:	d529      	bpl.n	1459a <<a href="./f2c5d15ba0d6723560c35ab4d96b04f9.html">util::command::HelpCommand::CallbackHelper::printDescription(char const*)</a>+0x76>
+
+    _ZN4util6string11ConstStringC4EPKcj():
+
+       14546:	9500      	str	r5, [sp, #0]
+
+       14548:	b105      	cbz	r5, 1454c <<a href="./f2c5d15ba0d6723560c35ab4d96b04f9.html">util::command::HelpCommand::CallbackHelper::printDescription(char const*)</a>+0x28>
+
+    util::command::HelpCommand::CallbackHelper::printDescription(char const*):
+
+       1454a:	1b65      	subs	r5, r4, r5
+
+       1454c:	4669      	mov	r1, sp
+
+       1454e:	4640      	mov	r0, r8
+
+    _ZN4util6string11ConstStringC4EPKcj():
+
+       14550:	9501      	str	r5, [sp, #4]
+
+    util::command::HelpCommand::CallbackHelper::printDescription(char const*):
+
+       14552:	f7ff f9f3 	bl	1393c <<a href="../../format/StringWriter.cpp/03aebf6331ff8b3f51ee4a5bd2467e06.html">util::format::StringWriter::write(util::string::ConstString const&)</a>>
+
+       14556:	6870      	ldr	r0, [r6, #4]
+
+       14558:	210a      	movs	r1, #10
+
+       1455a:	f7ff f9d3 	bl	13904 <<a href="../../format/StringWriter.cpp/608a21799fb0c463e4cd3beadb74ab09.html">util::format::StringWriter::write(char)</a>>
+
+       1455e:	4622      	mov	r2, r4
+
+       14560:	4615      	mov	r5, r2
+
+       14562:	f812 3b01 	ldrb.w	r3, [r2], #1
+
+    _ZN4util7command11HelpCommand14CallbackHelper6isCrLfEc():
+
+       14566:	2b0d      	cmp	r3, #13
+
+       14568:	d0fa      	beq.n	14560 <<a href="./f2c5d15ba0d6723560c35ab4d96b04f9.html">util::command::HelpCommand::CallbackHelper::printDescription(char const*)</a>+0x3c>
+
+       1456a:	2b0a      	cmp	r3, #10
+
+       1456c:	d0f8      	beq.n	14560 <<a href="./f2c5d15ba0d6723560c35ab4d96b04f9.html">util::command::HelpCommand::CallbackHelper::printDescription(char const*)</a>+0x3c>
+
+    _ZN4util7command11HelpCommand14CallbackHelper12isWhitespaceEc():
+
+       1456e:	2b20      	cmp	r3, #32
+
+       14570:	d016      	beq.n	145a0 <<a href="./f2c5d15ba0d6723560c35ab4d96b04f9.html">util::command::HelpCommand::CallbackHelper::printDescription(char const*)</a>+0x7c>
+
+       14572:	2b09      	cmp	r3, #9
+
+       14574:	d014      	beq.n	145a0 <<a href="./f2c5d15ba0d6723560c35ab4d96b04f9.html">util::command::HelpCommand::CallbackHelper::printDescription(char const*)</a>+0x7c>
+
+    util::command::HelpCommand::CallbackHelper::printDescription(char const*):
+
+       14576:	b1b3      	cbz	r3, 145a6 <<a href="./f2c5d15ba0d6723560c35ab4d96b04f9.html">util::command::HelpCommand::CallbackHelper::printDescription(char const*)</a>+0x82>
+
+       14578:	68f4      	ldr	r4, [r6, #12]
+
+       1457a:	f8d6 8004 	ldr.w	r8, [r6, #4]
+
+       1457e:	3403      	adds	r4, #3
+
+    writeSpaces():
+
+       14580:	d014      	beq.n	145ac <<a href="./f2c5d15ba0d6723560c35ab4d96b04f9.html">util::command::HelpCommand::CallbackHelper::printDescription(char const*)</a>+0x88>
+
+       14582:	2120      	movs	r1, #32
+
+       14584:	4640      	mov	r0, r8
+
+       14586:	f7ff f9bd 	bl	13904 <<a href="../../format/StringWriter.cpp/608a21799fb0c463e4cd3beadb74ab09.html">util::format::StringWriter::write(char)</a>>
+
+       1458a:	3c01      	subs	r4, #1
+
+       1458c:	d1f9      	bne.n	14582 <<a href="./f2c5d15ba0d6723560c35ab4d96b04f9.html">util::command::HelpCommand::CallbackHelper::printDescription(char const*)</a>+0x5e>
+
+    util::command::HelpCommand::CallbackHelper::printDescription(char const*):
+
+       1458e:	782b      	ldrb	r3, [r5, #0]
+
+       14590:	f8d6 8004 	ldr.w	r8, [r6, #4]
+
+       14594:	2b0d      	cmp	r3, #13
+
+       14596:	462c      	mov	r4, r5
+
+       14598:	d9d1      	bls.n	1453e <<a href="./f2c5d15ba0d6723560c35ab4d96b04f9.html">util::command::HelpCommand::CallbackHelper::printDescription(char const*)</a>+0x1a>
+
+       1459a:	7863      	ldrb	r3, [r4, #1]
+
+       1459c:	3401      	adds	r4, #1
+
+       1459e:	e7cc      	b.n	1453a <<a href="./f2c5d15ba0d6723560c35ab4d96b04f9.html">util::command::HelpCommand::CallbackHelper::printDescription(char const*)</a>+0x16>
+
+       145a0:	f815 3f01 	ldrb.w	r3, [r5, #1]!
+
+       145a4:	e7e3      	b.n	1456e <<a href="./f2c5d15ba0d6723560c35ab4d96b04f9.html">util::command::HelpCommand::CallbackHelper::printDescription(char const*)</a>+0x4a>
+
+       145a6:	b002      	add	sp, #8
+
+       145a8:	e8bd 81f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, pc}
+
+    writeSpaces():
+
+       145ac:	462c      	mov	r4, r5
+
+       145ae:	e7c4      	b.n	1453a <<a href="./f2c5d15ba0d6723560c35ab4d96b04f9.html">util::command::HelpCommand::CallbackHelper::printDescription(char const*)</a>+0x16>
+
+    </pre>
+
+    
+    <pre><a href="./c7c3242828d980f5c6709814e1f7a544.html">util::command::HelpCommand::CallbackHelper::startCommand(char const*, char const*, bool) (144)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 80</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 32</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    80
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">32</td>
+                <td><a href="../../format/StringWriter.cpp/03aebf6331ff8b3f51ee4a5bd2467e06.html" class="icon-function">util::format::StringWriter::write(util::string::ConstString const&amp;)</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">64
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 64</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 284</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    64
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                32 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    284
+                    
+                    
+                </td>
+                <td class="col_size">140</td>
+                <td><a href="./f2c5d15ba0d6723560c35ab4d96b04f9.html" class="icon-function">util::command::HelpCommand::CallbackHelper::printDescription(char const*)</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                32 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">144</td>
+                <td><a href="./c7c3242828d980f5c6709814e1f7a544.html" class="icon-function">util::command::HelpCommand::CallbackHelper::startCommand(char const*, char const*, bool)</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>
