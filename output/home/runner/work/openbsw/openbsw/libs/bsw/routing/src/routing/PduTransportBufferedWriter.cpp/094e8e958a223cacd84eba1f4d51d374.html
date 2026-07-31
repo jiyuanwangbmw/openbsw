@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../libs.html">libs</a></li>
+        
+        <li><a href="../../../../../bsw.html">bsw</a></li>
+        
+        <li><a href="../../../../routing.html">routing</a></li>
+        
+        <li><a href="../../../src.html">src</a></li>
+        
+        <li ><a href="../../routing.html">routing</a>
+            </li>
+
+        
+        <li class="active"><a href="../PduTransportBufferedWriter.cpp.html">PduTransportBufferedWriter.cpp</a>:21
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">routing::PduTransportBufferedWriter::allocate(unsigned int)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0002cd74</td>
+                <td>
+    
+    
+</td>
+                <td>32 (static)</td>
+                <td>176</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>No Callers</th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (1,
+                            <span title="sum of used bytes by all callees">
+                            Σ=128
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="./ebe83d79f975849d8e1cd9595b5a6365.html">routing::PduTransportBufferedWriter::flush() (128)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="./f3eb7d4c9c2ce7d05435e34a7665092a.html">routing::PduTransportBufferedWriter::commit() (172)</a></pre>
+    
+
+    <pre>
+
+    routing::PduTransportBufferedWriter::allocate(unsigned int):
+
+       2cd74:	b5f0      	push	{r4, r5, r6, r7, lr}
+
+       2cd76:	460c      	mov	r4, r1
+
+       2cd78:	6849      	ldr	r1, [r1, #4]
+
+       2cd7a:	680b      	ldr	r3, [r1, #0]
+
+       2cd7c:	4616      	mov	r6, r2
+
+       2cd7e:	689b      	ldr	r3, [r3, #8]
+
+       2cd80:	4a26      	ldr	r2, [pc, #152]	@ (2ce1c <<a href="./094e8e958a223cacd84eba1f4d51d374.html">routing::PduTransportBufferedWriter::allocate(unsigned int)</a>+0xa8>)
+
+       2cd82:	4293      	cmp	r3, r2
+
+       2cd84:	b083      	sub	sp, #12
+
+       2cd86:	4605      	mov	r5, r0
+
+       2cd88:	d142      	bne.n	2ce10 <<a href="./094e8e958a223cacd84eba1f4d51d374.html">routing::PduTransportBufferedWriter::allocate(unsigned int)</a>+0x9c>
+
+    routing::PduTransportBufferedWriter::maxSize() const():
+
+       2cd8a:	6848      	ldr	r0, [r1, #4]
+
+       2cd8c:	6802      	ldr	r2, [r0, #0]
+
+       2cd8e:	6892      	ldr	r2, [r2, #8]
+
+       2cd90:	429a      	cmp	r2, r3
+
+       2cd92:	d133      	bne.n	2cdfc <<a href="./094e8e958a223cacd84eba1f4d51d374.html">routing::PduTransportBufferedWriter::allocate(unsigned int)</a>+0x88>
+
+       2cd94:	6840      	ldr	r0, [r0, #4]
+
+       2cd96:	6803      	ldr	r3, [r0, #0]
+
+       2cd98:	689b      	ldr	r3, [r3, #8]
+
+       2cd9a:	4293      	cmp	r3, r2
+
+       2cd9c:	d139      	bne.n	2ce12 <<a href="./094e8e958a223cacd84eba1f4d51d374.html">routing::PduTransportBufferedWriter::allocate(unsigned int)</a>+0x9e>
+
+       2cd9e:	6840      	ldr	r0, [r0, #4]
+
+       2cda0:	6802      	ldr	r2, [r0, #0]
+
+       2cda2:	6892      	ldr	r2, [r2, #8]
+
+       2cda4:	429a      	cmp	r2, r3
+
+       2cda6:	d129      	bne.n	2cdfc <<a href="./094e8e958a223cacd84eba1f4d51d374.html">routing::PduTransportBufferedWriter::allocate(unsigned int)</a>+0x88>
+
+       2cda8:	6840      	ldr	r0, [r0, #4]
+
+       2cdaa:	6803      	ldr	r3, [r0, #0]
+
+       2cdac:	689b      	ldr	r3, [r3, #8]
+
+       2cdae:	4798      	blx	r3
+
+       2cdb0:	4607      	mov	r7, r0
+
+    routing::PduTransportBufferedWriter::allocate(unsigned int):
+
+       2cdb2:	42b7      	cmp	r7, r6
+
+       2cdb4:	d31b      	bcc.n	2cdee <<a href="./094e8e958a223cacd84eba1f4d51d374.html">routing::PduTransportBufferedWriter::allocate(unsigned int)</a>+0x7a>
+
+    _ZNK3etl4spanIhLj4294967295EE4sizeEv():
+
+       2cdb6:	68e2      	ldr	r2, [r4, #12]
+
+       2cdb8:	6923      	ldr	r3, [r4, #16]
+
+       2cdba:	1a9b      	subs	r3, r3, r2
+
+    routing::PduTransportBufferedWriter::allocate(unsigned int):
+
+       2cdbc:	429e      	cmp	r6, r3
+
+       2cdbe:	d920      	bls.n	2ce02 <<a href="./094e8e958a223cacd84eba1f4d51d374.html">routing::PduTransportBufferedWriter::allocate(unsigned int)</a>+0x8e>
+
+       2cdc0:	7d23      	ldrb	r3, [r4, #20]
+
+       2cdc2:	b93b      	cbnz	r3, 2cdd4 <<a href="./094e8e958a223cacd84eba1f4d51d374.html">routing::PduTransportBufferedWriter::allocate(unsigned int)</a>+0x60>
+
+       2cdc4:	6823      	ldr	r3, [r4, #0]
+
+       2cdc6:	4a16      	ldr	r2, [pc, #88]	@ (2ce20 <<a href="./094e8e958a223cacd84eba1f4d51d374.html">routing::PduTransportBufferedWriter::allocate(unsigned int)</a>+0xac>)
+
+       2cdc8:	695b      	ldr	r3, [r3, #20]
+
+       2cdca:	4293      	cmp	r3, r2
+
+    routing::PduTransportBufferedWriter::flush():
+
+       2cdcc:	4620      	mov	r0, r4
+
+       2cdce:	d123      	bne.n	2ce18 <<a href="./094e8e958a223cacd84eba1f4d51d374.html">routing::PduTransportBufferedWriter::allocate(unsigned int)</a>+0xa4>
+
+       2cdd0:	f7ff ff02 	bl	2cbd8 <<a href="./ebe83d79f975849d8e1cd9595b5a6365.html">routing::PduTransportBufferedWriter::flush()</a>.part.0>
+
+    routing::PduTransportBufferedWriter::allocate(unsigned int):
+
+       2cdd4:	6861      	ldr	r1, [r4, #4]
+
+       2cdd6:	680b      	ldr	r3, [r1, #0]
+
+       2cdd8:	463a      	mov	r2, r7
+
+       2cdda:	68db      	ldr	r3, [r3, #12]
+
+       2cddc:	4668      	mov	r0, sp
+
+       2cdde:	4798      	blx	r3
+
+    _ZN3etl4spanIhLj4294967295EEaSERKS1_():
+
+       2cde0:	9a00      	ldr	r2, [sp, #0]
+
+       2cde2:	9b01      	ldr	r3, [sp, #4]
+
+       2cde4:	6123      	str	r3, [r4, #16]
+
+    _ZNK3etl4spanIhLj4294967295EE4sizeEv():
+
+       2cde6:	1a9b      	subs	r3, r3, r2
+
+    routing::PduTransportBufferedWriter::allocate(unsigned int):
+
+       2cde8:	429f      	cmp	r7, r3
+
+    _ZN3etl4spanIhLj4294967295EEaSERKS1_():
+
+       2cdea:	60e2      	str	r2, [r4, #12]
+
+    routing::PduTransportBufferedWriter::allocate(unsigned int):
+
+       2cdec:	d009      	beq.n	2ce02 <<a href="./094e8e958a223cacd84eba1f4d51d374.html">routing::PduTransportBufferedWriter::allocate(unsigned int)</a>+0x8e>
+
+       2cdee:	2300      	movs	r3, #0
+
+       2cdf0:	4628      	mov	r0, r5
+
+       2cdf2:	61a3      	str	r3, [r4, #24]
+
+    _ZN3etl4spanIhLj4294967295EEC4Ev():
+
+       2cdf4:	602b      	str	r3, [r5, #0]
+
+       2cdf6:	606b      	str	r3, [r5, #4]
+
+    routing::PduTransportBufferedWriter::allocate(unsigned int):
+
+       2cdf8:	b003      	add	sp, #12
+
+       2cdfa:	bdf0      	pop	{r4, r5, r6, r7, pc}
+
+    routing::PduTransportBufferedWriter::maxSize() const():
+
+       2cdfc:	4790      	blx	r2
+
+       2cdfe:	4607      	mov	r7, r0
+
+       2ce00:	e7d7      	b.n	2cdb2 <<a href="./094e8e958a223cacd84eba1f4d51d374.html">routing::PduTransportBufferedWriter::allocate(unsigned int)</a>+0x3e>
+
+    _ZNK3etl4spanIhLj4294967295EE5firstEj():
+
+       2ce02:	1993      	adds	r3, r2, r6
+
+    routing::PduTransportBufferedWriter::allocate(unsigned int):
+
+       2ce04:	4628      	mov	r0, r5
+
+       2ce06:	61a6      	str	r6, [r4, #24]
+
+    _ZN3etl4spanIhLj4294967295EEC4IPhS3_EET_T0_PNS_9enable_ifIXntsrNS_11is_integralIS5_EE5valueEvE4typeE():
+
+       2ce08:	e9c5 2300 	strd	r2, r3, [r5]
+
+    routing::PduTransportBufferedWriter::allocate(unsigned int):
+
+       2ce0c:	b003      	add	sp, #12
+
+       2ce0e:	bdf0      	pop	{r4, r5, r6, r7, pc}
+
+       2ce10:	4608      	mov	r0, r1
+
+       2ce12:	4798      	blx	r3
+
+       2ce14:	4607      	mov	r7, r0
+
+       2ce16:	e7cc      	b.n	2cdb2 <<a href="./094e8e958a223cacd84eba1f4d51d374.html">routing::PduTransportBufferedWriter::allocate(unsigned int)</a>+0x3e>
+
+       2ce18:	4798      	blx	r3
+
+       2ce1a:	e7db      	b.n	2cdd4 <<a href="./094e8e958a223cacd84eba1f4d51d374.html">routing::PduTransportBufferedWriter::allocate(unsigned int)</a>+0x60>
+
+       2ce1c:	0002cc65 	.word	0x0002cc65
+
+       2ce20:	0002cc59 	.word	0x0002cc59
+
+    </pre>
+
+    
+    <pre><a href="./8cbd95b6e4c4305f999e138dea6364e5.html">routing::PduTransportBufferedWriter::checkTransmissionTimeout() (76)</a></pre>
+    
+
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

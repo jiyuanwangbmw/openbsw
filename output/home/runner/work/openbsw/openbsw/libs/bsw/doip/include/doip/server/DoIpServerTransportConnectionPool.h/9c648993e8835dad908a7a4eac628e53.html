@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../../libs.html">libs</a></li>
+        
+        <li><a href="../../../../../../bsw.html">bsw</a></li>
+        
+        <li><a href="../../../../../doip.html">doip</a></li>
+        
+        <li><a href="../../../../include.html">include</a></li>
+        
+        <li><a href="../../../doip.html">doip</a></li>
+        
+        <li ><a href="../../server.html">server</a>
+            </li>
+
+        
+        <li class="active"><a href="../DoIpServerTransportConnectionPool.h.html">DoIpServerTransportConnectionPool.h</a>:72
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">doip::declare::DoIpServerTransportConnectionPool&lt;doip::DoIpServerTransportConnection, 5u, 6u, 8u&gt;::createConnection(unsigned char, tcp::AbstractSocket&amp;, doip::DoIpServerTransportConnectionConfig const&amp;, doip::DoIpTcpConnection::ConnectionType)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0000ace8</td>
+                <td>
+    
+    
+</td>
+                <td>56 (static)</td>
+                <td>204</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>No Callers</th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (1,
+                            <span title="sum of used bytes by all callees">
+                            Σ=140
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="../../../../src/doip/server/DoIpServerTransportConnection.cpp/c15517fc1389a5d2779ed881fffc762b.html">doip::DoIpServerTransportConnection::DoIpServerTransportConnection(doip::DoIpConstants::ProtocolVersion, unsigned char, tcp::AbstractSocket&amp;, doip::DoIpServerTransportConnectionConfig const&amp;, etl::ipool&amp;, etl::ipool&amp;, doip::DoIpTcpConnection::ConnectionType) (140)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="../../../../../../../executables/referenceApp/application/include/systems/DoIpServerSystem.h/eebcad5d256d04c88b77b2be18a52898.html">non-virtual thunk to doip::DoIpServerSystem::execute() (4)</a></pre>
+    
+
+    <pre>
+
+    doip::declare::DoIpServerTransportConnectionPool<doip::DoIpServerTransportConnection, 5u, 6u, 8u>::createConnection(unsigned char, tcp::AbstractSocket&, doip::DoIpServerTransportConnectionConfig const&, doip::DoIpTcpConnection::ConnectionType):
+
+        ace8:	e92d 47f0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, lr}
+
+        acec:	4604      	mov	r4, r0
+
+    _ZNK3etl5ipool4fullEv():
+
+        acee:	6900      	ldr	r0, [r0, #16]
+
+        acf0:	69e5      	ldr	r5, [r4, #28]
+
+    doip::declare::DoIpServerTransportConnectionPool<doip::DoIpServerTransportConnection, 5u, 6u, 8u>::createConnection(unsigned char, tcp::AbstractSocket&, doip::DoIpServerTransportConnectionConfig const&, doip::DoIpTcpConnection::ConnectionType):
+
+        acf2:	b086      	sub	sp, #24
+
+        acf4:	42a8      	cmp	r0, r5
+
+        acf6:	f89d 9038 	ldrb.w	r9, [sp, #56]	@ 0x38
+
+        acfa:	d046      	beq.n	ad8a <<a href="./9c648993e8835dad908a7a4eac628e53.html">doip::declare::DoIpServerTransportConnectionPool<doip::DoIpServerTransportConnection, 5u, 6u, 8u>::createConnection(unsigned char, tcp::AbstractSocket&, doip::DoIpServerTransportConnectionConfig const&, doip::DoIpTcpConnection::ConnectionType)</a>+0xa2>
+
+        acfc:	4698      	mov	r8, r3
+
+    _ZN3etl5ipool8allocateIN4doip29DoIpServerTransportConnectionEEEPT_v():
+
+        acfe:	69a3      	ldr	r3, [r4, #24]
+
+        ad00:	f5b3 7fde 	cmp.w	r3, #444	@ 0x1bc
+
+        ad04:	460f      	mov	r7, r1
+
+        ad06:	4692      	mov	sl, r2
+
+        ad08:	d205      	bcs.n	ad16 <<a href="./9c648993e8835dad908a7a4eac628e53.html">doip::declare::DoIpServerTransportConnectionPool<doip::DoIpServerTransportConnection, 5u, 6u, 8u>::createConnection(unsigned char, tcp::AbstractSocket&, doip::DoIpServerTransportConnectionConfig const&, doip::DoIpTcpConnection::ConnectionType)</a>+0x2e>
+
+        ad0a:	4b28      	ldr	r3, [pc, #160]	@ (adac <<a href="./9c648993e8835dad908a7a4eac628e53.html">doip::declare::DoIpServerTransportConnectionPool<doip::DoIpServerTransportConnection, 5u, 6u, 8u>::createConnection(unsigned char, tcp::AbstractSocket&, doip::DoIpServerTransportConnectionConfig const&, doip::DoIpTcpConnection::ConnectionType)</a>+0xc4>)
+
+        ad0c:	a805      	add	r0, sp, #20
+
+        ad0e:	681b      	ldr	r3, [r3, #0]
+
+        ad10:	4798      	blx	r3
+
+    _ZN3etl5ipool13allocate_itemEv():
+
+        ad12:	6920      	ldr	r0, [r4, #16]
+
+        ad14:	69e5      	ldr	r5, [r4, #28]
+
+        ad16:	4285      	cmp	r5, r0
+
+        ad18:	d931      	bls.n	ad7e <<a href="./9c648993e8835dad908a7a4eac628e53.html">doip::declare::DoIpServerTransportConnectionPool<doip::DoIpServerTransportConnection, 5u, 6u, 8u>::createConnection(unsigned char, tcp::AbstractSocket&, doip::DoIpServerTransportConnectionConfig const&, doip::DoIpTcpConnection::ConnectionType)</a>+0x96>
+
+        ad1a:	6963      	ldr	r3, [r4, #20]
+
+        ad1c:	429d      	cmp	r5, r3
+
+        ad1e:	d909      	bls.n	ad34 <<a href="./9c648993e8835dad908a7a4eac628e53.html">doip::declare::DoIpServerTransportConnectionPool<doip::DoIpServerTransportConnection, 5u, 6u, 8u>::createConnection(unsigned char, tcp::AbstractSocket&, doip::DoIpServerTransportConnectionConfig const&, doip::DoIpTcpConnection::ConnectionType)</a>+0x4c>
+
+        ad20:	f8d4 c018 	ldr.w	ip, [r4, #24]
+
+        ad24:	68a6      	ldr	r6, [r4, #8]
+
+        ad26:	fb0c f103 	mul.w	r1, ip, r3
+
+        ad2a:	1872      	adds	r2, r6, r1
+
+        ad2c:	3301      	adds	r3, #1
+
+        ad2e:	4462      	add	r2, ip
+
+        ad30:	5072      	str	r2, [r6, r1]
+
+        ad32:	6163      	str	r3, [r4, #20]
+
+        ad34:	68e6      	ldr	r6, [r4, #12]
+
+        ad36:	3001      	adds	r0, #1
+
+        ad38:	4285      	cmp	r5, r0
+
+        ad3a:	bf88      	it	hi
+
+        ad3c:	6833      	ldrhi	r3, [r6, #0]
+
+        ad3e:	6120      	str	r0, [r4, #16]
+
+        ad40:	bf98      	it	ls
+
+        ad42:	2300      	movls	r3, #0
+
+        ad44:	60e3      	str	r3, [r4, #12]
+
+        ad46:	2301      	movs	r3, #1
+
+        ad48:	6033      	str	r3, [r6, #0]
+
+    doip::declare::DoIpServerTransportConnectionPool<doip::DoIpServerTransportConnection, 5u, 6u, 8u>::createConnection(unsigned char, tcp::AbstractSocket&, doip::DoIpServerTransportConnectionConfig const&, doip::DoIpTcpConnection::ConnectionType):
+
+        ad4a:	6860      	ldr	r0, [r4, #4]
+
+        ad4c:	4a18      	ldr	r2, [pc, #96]	@ (adb0 <<a href="./9c648993e8835dad908a7a4eac628e53.html">doip::declare::DoIpServerTransportConnectionPool<doip::DoIpServerTransportConnection, 5u, 6u, 8u>::createConnection(unsigned char, tcp::AbstractSocket&, doip::DoIpServerTransportConnectionConfig const&, doip::DoIpTcpConnection::ConnectionType)</a>+0xc8>)
+
+        ad4e:	6803      	ldr	r3, [r0, #0]
+
+        ad50:	681d      	ldr	r5, [r3, #0]
+
+        ad52:	4295      	cmp	r5, r2
+
+        ad54:	f604 2388 	addw	r3, r4, #2696	@ 0xa88
+
+        ad58:	f504 6436 	add.w	r4, r4, #2912	@ 0xb60
+
+        ad5c:	d11a      	bne.n	ad94 <<a href="./9c648993e8835dad908a7a4eac628e53.html">doip::declare::DoIpServerTransportConnectionPool<doip::DoIpServerTransportConnection, 5u, 6u, 8u>::createConnection(unsigned char, tcp::AbstractSocket&, doip::DoIpServerTransportConnectionConfig const&, doip::DoIpTcpConnection::ConnectionType)</a>+0xac>
+
+    doip::DoIpServerSystem::TransportConnectionCreator::createConnection(doip::DoIpServerTransportConnection*, unsigned char, tcp::AbstractSocket&, etl::ipool&, etl::ipool&, doip::DoIpServerTransportConnectionConfig const&, doip::DoIpTcpConnection::ConnectionType):
+
+        ad5e:	9402      	str	r4, [sp, #8]
+
+        ad60:	2400      	movs	r4, #0
+
+        ad62:	9301      	str	r3, [sp, #4]
+
+        ad64:	f8cd 8000 	str.w	r8, [sp]
+
+        ad68:	4653      	mov	r3, sl
+
+        ad6a:	463a      	mov	r2, r7
+
+        ad6c:	2102      	movs	r1, #2
+
+        ad6e:	4630      	mov	r0, r6
+
+        ad70:	9403      	str	r4, [sp, #12]
+
+        ad72:	f01b fe2d 	bl	269d0 <<a href="../../../../src/doip/server/DoIpServerTransportConnection.cpp/c15517fc1389a5d2779ed881fffc762b.html">doip::DoIpServerTransportConnection::DoIpServerTransportConnection(doip::DoIpConstants::ProtocolVersion, unsigned char, tcp::AbstractSocket&, doip::DoIpServerTransportConnectionConfig const&, etl::ipool&, etl::ipool&, doip::DoIpTcpConnection::ConnectionType)</a>>
+
+    doip::declare::DoIpServerTransportConnectionPool<doip::DoIpServerTransportConnection, 5u, 6u, 8u>::createConnection(unsigned char, tcp::AbstractSocket&, doip::DoIpServerTransportConnectionConfig const&, doip::DoIpTcpConnection::ConnectionType):
+
+        ad76:	4630      	mov	r0, r6
+
+        ad78:	b006      	add	sp, #24
+
+        ad7a:	e8bd 87f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, pc}
+
+    _ZN3etl5ipool13allocate_itemEv():
+
+        ad7e:	4b0b      	ldr	r3, [pc, #44]	@ (adac <<a href="./9c648993e8835dad908a7a4eac628e53.html">doip::declare::DoIpServerTransportConnectionPool<doip::DoIpServerTransportConnection, 5u, 6u, 8u>::createConnection(unsigned char, tcp::AbstractSocket&, doip::DoIpServerTransportConnectionConfig const&, doip::DoIpTcpConnection::ConnectionType)</a>+0xc4>)
+
+        ad80:	a805      	add	r0, sp, #20
+
+        ad82:	681b      	ldr	r3, [r3, #0]
+
+        ad84:	4798      	blx	r3
+
+        ad86:	2600      	movs	r6, #0
+
+        ad88:	e7df      	b.n	ad4a <<a href="./9c648993e8835dad908a7a4eac628e53.html">doip::declare::DoIpServerTransportConnectionPool<doip::DoIpServerTransportConnection, 5u, 6u, 8u>::createConnection(unsigned char, tcp::AbstractSocket&, doip::DoIpServerTransportConnectionConfig const&, doip::DoIpTcpConnection::ConnectionType)</a>+0x62>
+
+    doip::declare::DoIpServerTransportConnectionPool<doip::DoIpServerTransportConnection, 5u, 6u, 8u>::createConnection(unsigned char, tcp::AbstractSocket&, doip::DoIpServerTransportConnectionConfig const&, doip::DoIpTcpConnection::ConnectionType):
+
+        ad8a:	2600      	movs	r6, #0
+
+        ad8c:	4630      	mov	r0, r6
+
+        ad8e:	b006      	add	sp, #24
+
+        ad90:	e8bd 87f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, pc}
+
+        ad94:	e88d 0318 	stmia.w	sp, {r3, r4, r8, r9}
+
+        ad98:	4631      	mov	r1, r6
+
+        ad9a:	4653      	mov	r3, sl
+
+        ad9c:	463a      	mov	r2, r7
+
+        ad9e:	47a8      	blx	r5
+
+        ada0:	4606      	mov	r6, r0
+
+        ada2:	4630      	mov	r0, r6
+
+        ada4:	b006      	add	sp, #24
+
+        ada6:	e8bd 87f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, pc}
+
+        adaa:	bf00      	nop
+
+        adac:	20000000 	.word	0x20000000
+
+        adb0:	0000aba9 	.word	0x0000aba9
+
+    </pre>
+
+    
+    <pre><a href="../../../../../../3rdparty/etl/include/etl/private/delegate_cpp11.h/6055b888afd4358b2ffe6e3e4b1708c1.html">void etl::delegate&lt;void (etl::span&lt;char, 17u&gt;)&gt;::method_stub&lt;doip::DoIpServerSystem, &amp;doip::DoIpServerSystem::getVin&gt;(etl::delegate&lt;void (etl::span&lt;char, 17u&gt;)&gt;::invocation_element const&amp;, etl::span&lt;char, 17u&gt;) (40)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 144</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 296</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    144
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                32 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    296
+                    
+                    
+                </td>
+                <td class="col_size">156</td>
+                <td><a href="../../../../src/doip/server/DoIpServerConnectionHandler.cpp/ffbb6822a0a4a3170f56d01209b55e95.html" class="icon-function">doip::DoIpServerConnectionHandler::DoIpServerConnectionHandler(doip::DoIpConstants::ProtocolVersion, unsigned char, doip::IDoIpTcpConnection&amp;, unsigned char, unsigned short, doip::DoIpServerTransportLayerParameters const&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    112
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                56 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">140</td>
+                <td><a href="../../../../src/doip/server/DoIpServerTransportConnection.cpp/c15517fc1389a5d2779ed881fffc762b.html" class="icon-function">doip::DoIpServerTransportConnection::DoIpServerTransportConnection(doip::DoIpConstants::ProtocolVersion, unsigned char, tcp::AbstractSocket&amp;, doip::DoIpServerTransportConnectionConfig const&amp;, etl::ipool&amp;, etl::ipool&amp;, doip::DoIpTcpConnection::ConnectionType)</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">56
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+            <p>No callers for this function.</p>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

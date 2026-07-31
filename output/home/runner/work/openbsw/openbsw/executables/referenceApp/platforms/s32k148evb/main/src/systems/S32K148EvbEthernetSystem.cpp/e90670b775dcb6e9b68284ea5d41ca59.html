@@ -1,0 +1,621 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../../../executables.html">executables</a></li>
+        
+        <li><a href="../../../../../../../referenceApp.html">referenceApp</a></li>
+        
+        <li><a href="../../../../../../platforms.html">platforms</a></li>
+        
+        <li><a href="../../../../../s32k148evb.html">s32k148evb</a></li>
+        
+        <li><a href="../../../../main.html">main</a></li>
+        
+        <li><a href="../../../src.html">src</a></li>
+        
+        <li ><a href="../../systems.html">systems</a>
+            </li>
+
+        
+        <li class="active"><a href="../S32K148EvbEthernetSystem.cpp.html">S32K148EvbEthernetSystem.cpp</a>:187
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">systems::S32K148EvbEthernetSystem::init()</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x00013a38</td>
+                <td>
+    <span class="label label-success">x-module</span>
+    
+</td>
+                <td>24 (static)</td>
+                <td>400</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="../../../include/systems/S32K148EvbEthernetSystem.h/9c0bf3a49ddb7f298a8467359e0a0fed.html">non-virtual thunk to systems::S32K148EvbEthernetSystem::init() (8)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (9,
+                            <span title="sum of used bytes by all callees">
+                            Σ=480
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="../../../../../../../../libs/bsp/bspOutputManager/src/outputManager/Output.cpp/2c08fa321893ba76c3bcda60607bc7c8.html">bios::Output::set(bios::Output::OutputId, unsigned char, bool) (56)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../bspConfiguration/src/bsp/SystemTimer/SystemTimer.cpp/35425094d4e9dc32f9e47f58106b4135.html">sysDelayUs (108)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../../../platforms/s32k1xx/bsp/bspTja1101/src/phy/Tja1101.cpp/2ac1e3dfbe51be7094a3f0ff0a04757f.html">enetphy::Tja1101::start() (32)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../../../platforms/s32k1xx/bsp/bspTja1101/src/phy/Tja1101.cpp/d91488e634ca946c5320f24f8dee5bfd.html">enetphy::Tja1101::readMiimRegister(unsigned char, unsigned short&amp;) (24)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../../../libs/bsw/util/include/util/logger/Logger.h/e675253f5bfedd299c26bd0145e28698.html">util::logger::Logger::error(unsigned char, char const*, ...) (88)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../../../platforms/s32k1xx/bsp/bspIo/src/io/Io.cpp/cec6484b130ee51f1f05d1885b5b84f0.html">bios::Io::setDefaultConfiguration(unsigned short) (24)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../../../platforms/s32k1xx/bsp/bspEthernet/src/ethernet/EnetDriver.cpp/90f971c0ab70e31e4af626fab65607fe.html">ethernet::EnetDriver::init() (92)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../../../libs/bsw/lifecycle/src/lifecycle/LifecycleComponent.cpp/2a6c4a8fcaef587365a0a8447e58c4f0.html">lifecycle::LifecycleComponent::transitionDone() (16)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../../../platforms/s32k1xx/bsp/bspTja1101/src/phy/Tja1101.cpp/303e4a3eafeadb5318aa349e73f7dbed.html">enetphy::Tja1101::writeMiimRegister(unsigned char, unsigned short) (40)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="../../../include/systems/S32K148EvbEthernetSystem.h/effe29ea9030c4be0b643d221312d17b.html">non-virtual thunk to systems::S32K148EvbEthernetSystem::execute() (64)</a></pre>
+    
+
+    <pre>
+
+    systems::S32K148EvbEthernetSystem::init():
+
+       13a38:	b570      	push	{r4, r5, r6, lr}
+
+       13a3a:	2201      	movs	r2, #1
+
+       13a3c:	2500      	movs	r5, #0
+
+       13a3e:	b082      	sub	sp, #8
+
+       13a40:	4611      	mov	r1, r2
+
+       13a42:	4604      	mov	r4, r0
+
+       13a44:	f880 5158 	strb.w	r5, [r0, #344]	@ 0x158
+
+       13a48:	2004      	movs	r0, #4
+
+       13a4a:	f01c ffb5 	bl	309b8 <<a href="../../../../../../../../libs/bsp/bspOutputManager/src/outputManager/Output.cpp/2c08fa321893ba76c3bcda60607bc7c8.html">bios::Output::set(bios::Output::OutputId, unsigned char, bool)</a>>
+
+       13a4e:	f44f 707a 	mov.w	r0, #1000	@ 0x3e8
+
+       13a52:	f01d fc1f 	bl	31294 <<a href="../../../../bspConfiguration/src/bsp/SystemTimer/SystemTimer.cpp/35425094d4e9dc32f9e47f58106b4135.html">sysDelayUs</a>>
+
+       13a56:	2201      	movs	r2, #1
+
+       13a58:	4629      	mov	r1, r5
+
+       13a5a:	2004      	movs	r0, #4
+
+       13a5c:	f01c ffac 	bl	309b8 <<a href="../../../../../../../../libs/bsp/bspOutputManager/src/outputManager/Output.cpp/2c08fa321893ba76c3bcda60607bc7c8.html">bios::Output::set(bios::Output::OutputId, unsigned char, bool)</a>>
+
+       13a60:	f504 768e 	add.w	r6, r4, #284	@ 0x11c
+
+       13a64:	f44f 707a 	mov.w	r0, #1000	@ 0x3e8
+
+       13a68:	f01d fc14 	bl	31294 <<a href="../../../../bspConfiguration/src/bsp/SystemTimer/SystemTimer.cpp/35425094d4e9dc32f9e47f58106b4135.html">sysDelayUs</a>>
+
+       13a6c:	4630      	mov	r0, r6
+
+       13a6e:	f01c fd6b 	bl	30548 <<a href="../../../../../../../../platforms/s32k1xx/bsp/bspTja1101/src/phy/Tja1101.cpp/2ac1e3dfbe51be7094a3f0ff0a04757f.html">enetphy::Tja1101::start()</a>>
+
+       13a72:	2111      	movs	r1, #17
+
+    configureTja1101():
+
+       13a74:	f10d 0206 	add.w	r2, sp, #6
+
+       13a78:	4630      	mov	r0, r6
+
+       13a7a:	f8ad 5006 	strh.w	r5, [sp, #6]
+
+       13a7e:	f01c fd87 	bl	30590 <<a href="../../../../../../../../platforms/s32k1xx/bsp/bspTja1101/src/phy/Tja1101.cpp/d91488e634ca946c5320f24f8dee5bfd.html">enetphy::Tja1101::readMiimRegister(unsigned char, unsigned short&)</a>>
+
+       13a82:	bbc8      	cbnz	r0, 13af8 <<a href="./e90670b775dcb6e9b68284ea5d41ca59.html">systems::S32K148EvbEthernetSystem::init()</a>+0xc0>
+
+    systems::S32K148EvbEthernetSystem::init():
+
+       13a84:	4b4e      	ldr	r3, [pc, #312]	@ (13bc0 <<a href="./e90670b775dcb6e9b68284ea5d41ca59.html">systems::S32K148EvbEthernetSystem::init()</a>+0x188>)
+
+       13a86:	494f      	ldr	r1, [pc, #316]	@ (13bc4 <<a href="./e90670b775dcb6e9b68284ea5d41ca59.html">systems::S32K148EvbEthernetSystem::init()</a>+0x18c>)
+
+       13a88:	7818      	ldrb	r0, [r3, #0]
+
+       13a8a:	f7f5 fdc5 	bl	9618 <<a href="../../../../../../../../libs/bsw/util/include/util/logger/Logger.h/e675253f5bfedd299c26bd0145e28698.html">util::logger::Logger::error(unsigned char, char const*, ...)</a>>
+
+       13a8e:	2069      	movs	r0, #105	@ 0x69
+
+    configureEnetPins():
+
+       13a90:	f01c fc56 	bl	30340 <<a href="../../../../../../../../platforms/s32k1xx/bsp/bspIo/src/io/Io.cpp/cec6484b130ee51f1f05d1885b5b84f0.html">bios::Io::setDefaultConfiguration(unsigned short)</a>>
+
+       13a94:	2068      	movs	r0, #104	@ 0x68
+
+       13a96:	f01c fc53 	bl	30340 <<a href="../../../../../../../../platforms/s32k1xx/bsp/bspIo/src/io/Io.cpp/cec6484b130ee51f1f05d1885b5b84f0.html">bios::Io::setDefaultConfiguration(unsigned short)</a>>
+
+       13a9a:	2051      	movs	r0, #81	@ 0x51
+
+       13a9c:	f01c fc50 	bl	30340 <<a href="../../../../../../../../platforms/s32k1xx/bsp/bspIo/src/io/Io.cpp/cec6484b130ee51f1f05d1885b5b84f0.html">bios::Io::setDefaultConfiguration(unsigned short)</a>>
+
+       13aa0:	2050      	movs	r0, #80	@ 0x50
+
+       13aa2:	f01c fc4d 	bl	30340 <<a href="../../../../../../../../platforms/s32k1xx/bsp/bspIo/src/io/Io.cpp/cec6484b130ee51f1f05d1885b5b84f0.html">bios::Io::setDefaultConfiguration(unsigned short)</a>>
+
+       13aa6:	2066      	movs	r0, #102	@ 0x66
+
+       13aa8:	f01c fc4a 	bl	30340 <<a href="../../../../../../../../platforms/s32k1xx/bsp/bspIo/src/io/Io.cpp/cec6484b130ee51f1f05d1885b5b84f0.html">bios::Io::setDefaultConfiguration(unsigned short)</a>>
+
+       13aac:	2065      	movs	r0, #101	@ 0x65
+
+       13aae:	f01c fc47 	bl	30340 <<a href="../../../../../../../../platforms/s32k1xx/bsp/bspIo/src/io/Io.cpp/cec6484b130ee51f1f05d1885b5b84f0.html">bios::Io::setDefaultConfiguration(unsigned short)</a>>
+
+       13ab2:	2067      	movs	r0, #103	@ 0x67
+
+       13ab4:	f01c fc44 	bl	30340 <<a href="../../../../../../../../platforms/s32k1xx/bsp/bspIo/src/io/Io.cpp/cec6484b130ee51f1f05d1885b5b84f0.html">bios::Io::setDefaultConfiguration(unsigned short)</a>>
+
+       13ab8:	2040      	movs	r0, #64	@ 0x40
+
+       13aba:	f01c fc41 	bl	30340 <<a href="../../../../../../../../platforms/s32k1xx/bsp/bspIo/src/io/Io.cpp/cec6484b130ee51f1f05d1885b5b84f0.html">bios::Io::setDefaultConfiguration(unsigned short)</a>>
+
+       13abe:	2041      	movs	r0, #65	@ 0x41
+
+       13ac0:	f01c fc3e 	bl	30340 <<a href="../../../../../../../../platforms/s32k1xx/bsp/bspIo/src/io/Io.cpp/cec6484b130ee51f1f05d1885b5b84f0.html">bios::Io::setDefaultConfiguration(unsigned short)</a>>
+
+       13ac4:	2042      	movs	r0, #66	@ 0x42
+
+       13ac6:	f01c fc3b 	bl	30340 <<a href="../../../../../../../../platforms/s32k1xx/bsp/bspIo/src/io/Io.cpp/cec6484b130ee51f1f05d1885b5b84f0.html">bios::Io::setDefaultConfiguration(unsigned short)</a>>
+
+       13aca:	206a      	movs	r0, #106	@ 0x6a
+
+       13acc:	f01c fc38 	bl	30340 <<a href="../../../../../../../../platforms/s32k1xx/bsp/bspIo/src/io/Io.cpp/cec6484b130ee51f1f05d1885b5b84f0.html">bios::Io::setDefaultConfiguration(unsigned short)</a>>
+
+       13ad0:	206c      	movs	r0, #108	@ 0x6c
+
+       13ad2:	f01c fc35 	bl	30340 <<a href="../../../../../../../../platforms/s32k1xx/bsp/bspIo/src/io/Io.cpp/cec6484b130ee51f1f05d1885b5b84f0.html">bios::Io::setDefaultConfiguration(unsigned short)</a>>
+
+       13ad6:	206b      	movs	r0, #107	@ 0x6b
+
+       13ad8:	f01c fc32 	bl	30340 <<a href="../../../../../../../../platforms/s32k1xx/bsp/bspIo/src/io/Io.cpp/cec6484b130ee51f1f05d1885b5b84f0.html">bios::Io::setDefaultConfiguration(unsigned short)</a>>
+
+       13adc:	2043      	movs	r0, #67	@ 0x43
+
+       13ade:	f01c fc2f 	bl	30340 <<a href="../../../../../../../../platforms/s32k1xx/bsp/bspIo/src/io/Io.cpp/cec6484b130ee51f1f05d1885b5b84f0.html">bios::Io::setDefaultConfiguration(unsigned short)</a>>
+
+    systems::S32K148EvbEthernetSystem::init():
+
+       13ae2:	f104 0088 	add.w	r0, r4, #136	@ 0x88
+
+       13ae6:	f01d fedb 	bl	318a0 <<a href="../../../../../../../../platforms/s32k1xx/bsp/bspEthernet/src/ethernet/EnetDriver.cpp/90f971c0ab70e31e4af626fab65607fe.html">ethernet::EnetDriver::init()</a>>
+
+       13aea:	f104 000c 	add.w	r0, r4, #12
+
+       13aee:	b002      	add	sp, #8
+
+       13af0:	e8bd 4070 	ldmia.w	sp!, {r4, r5, r6, lr}
+
+       13af4:	f7fd bbdc 	b.w	112b0 <<a href="../../../../../../../../libs/bsw/lifecycle/src/lifecycle/LifecycleComponent.cpp/2a6c4a8fcaef587365a0a8447e58c4f0.html">lifecycle::LifecycleComponent::transitionDone()</a>>
+
+    configureTja1101():
+
+       13af8:	f8bd 2006 	ldrh.w	r2, [sp, #6]
+
+       13afc:	2111      	movs	r1, #17
+
+       13afe:	f042 0204 	orr.w	r2, r2, #4
+
+       13b02:	4630      	mov	r0, r6
+
+       13b04:	f8ad 2006 	strh.w	r2, [sp, #6]
+
+       13b08:	f01c fd2e 	bl	30568 <<a href="../../../../../../../../platforms/s32k1xx/bsp/bspTja1101/src/phy/Tja1101.cpp/303e4a3eafeadb5318aa349e73f7dbed.html">enetphy::Tja1101::writeMiimRegister(unsigned char, unsigned short)</a>>
+
+       13b0c:	2800      	cmp	r0, #0
+
+       13b0e:	d0b9      	beq.n	13a84 <<a href="./e90670b775dcb6e9b68284ea5d41ca59.html">systems::S32K148EvbEthernetSystem::init()</a>+0x4c>
+
+       13b10:	f10d 0206 	add.w	r2, sp, #6
+
+       13b14:	211b      	movs	r1, #27
+
+       13b16:	4630      	mov	r0, r6
+
+       13b18:	f01c fd3a 	bl	30590 <<a href="../../../../../../../../platforms/s32k1xx/bsp/bspTja1101/src/phy/Tja1101.cpp/d91488e634ca946c5320f24f8dee5bfd.html">enetphy::Tja1101::readMiimRegister(unsigned char, unsigned short&)</a>>
+
+       13b1c:	2800      	cmp	r0, #0
+
+       13b1e:	d0b1      	beq.n	13a84 <<a href="./e90670b775dcb6e9b68284ea5d41ca59.html">systems::S32K148EvbEthernetSystem::init()</a>+0x4c>
+
+       13b20:	f8bd 2006 	ldrh.w	r2, [sp, #6]
+
+       13b24:	211b      	movs	r1, #27
+
+       13b26:	f3c2 020e 	ubfx	r2, r2, #0, #15
+
+       13b2a:	4630      	mov	r0, r6
+
+       13b2c:	f8ad 2006 	strh.w	r2, [sp, #6]
+
+       13b30:	f01c fd1a 	bl	30568 <<a href="../../../../../../../../platforms/s32k1xx/bsp/bspTja1101/src/phy/Tja1101.cpp/303e4a3eafeadb5318aa349e73f7dbed.html">enetphy::Tja1101::writeMiimRegister(unsigned char, unsigned short)</a>>
+
+       13b34:	2800      	cmp	r0, #0
+
+       13b36:	d0a5      	beq.n	13a84 <<a href="./e90670b775dcb6e9b68284ea5d41ca59.html">systems::S32K148EvbEthernetSystem::init()</a>+0x4c>
+
+       13b38:	f10d 0206 	add.w	r2, sp, #6
+
+       13b3c:	2112      	movs	r1, #18
+
+       13b3e:	4630      	mov	r0, r6
+
+       13b40:	f01c fd26 	bl	30590 <<a href="../../../../../../../../platforms/s32k1xx/bsp/bspTja1101/src/phy/Tja1101.cpp/d91488e634ca946c5320f24f8dee5bfd.html">enetphy::Tja1101::readMiimRegister(unsigned char, unsigned short&)</a>>
+
+       13b44:	2800      	cmp	r0, #0
+
+       13b46:	d09d      	beq.n	13a84 <<a href="./e90670b775dcb6e9b68284ea5d41ca59.html">systems::S32K148EvbEthernetSystem::init()</a>+0x4c>
+
+       13b48:	f8bd 2006 	ldrh.w	r2, [sp, #6]
+
+       13b4c:	f422 7240 	bic.w	r2, r2, #768	@ 0x300
+
+       13b50:	f442 7200 	orr.w	r2, r2, #512	@ 0x200
+
+       13b54:	b292      	uxth	r2, r2
+
+       13b56:	2112      	movs	r1, #18
+
+       13b58:	4630      	mov	r0, r6
+
+       13b5a:	f8ad 2006 	strh.w	r2, [sp, #6]
+
+       13b5e:	f01c fd03 	bl	30568 <<a href="../../../../../../../../platforms/s32k1xx/bsp/bspTja1101/src/phy/Tja1101.cpp/303e4a3eafeadb5318aa349e73f7dbed.html">enetphy::Tja1101::writeMiimRegister(unsigned char, unsigned short)</a>>
+
+       13b62:	2800      	cmp	r0, #0
+
+       13b64:	d08e      	beq.n	13a84 <<a href="./e90670b775dcb6e9b68284ea5d41ca59.html">systems::S32K148EvbEthernetSystem::init()</a>+0x4c>
+
+       13b66:	f10d 0206 	add.w	r2, sp, #6
+
+       13b6a:	211b      	movs	r1, #27
+
+       13b6c:	4630      	mov	r0, r6
+
+       13b6e:	f01c fd0f 	bl	30590 <<a href="../../../../../../../../platforms/s32k1xx/bsp/bspTja1101/src/phy/Tja1101.cpp/d91488e634ca946c5320f24f8dee5bfd.html">enetphy::Tja1101::readMiimRegister(unsigned char, unsigned short&)</a>>
+
+       13b72:	2800      	cmp	r0, #0
+
+       13b74:	d086      	beq.n	13a84 <<a href="./e90670b775dcb6e9b68284ea5d41ca59.html">systems::S32K148EvbEthernetSystem::init()</a>+0x4c>
+
+       13b76:	f8bd 2006 	ldrh.w	r2, [sp, #6]
+
+       13b7a:	211b      	movs	r1, #27
+
+       13b7c:	f442 4200 	orr.w	r2, r2, #32768	@ 0x8000
+
+       13b80:	4630      	mov	r0, r6
+
+       13b82:	f8ad 2006 	strh.w	r2, [sp, #6]
+
+       13b86:	f01c fcef 	bl	30568 <<a href="../../../../../../../../platforms/s32k1xx/bsp/bspTja1101/src/phy/Tja1101.cpp/303e4a3eafeadb5318aa349e73f7dbed.html">enetphy::Tja1101::writeMiimRegister(unsigned char, unsigned short)</a>>
+
+       13b8a:	2800      	cmp	r0, #0
+
+       13b8c:	f43f af7a 	beq.w	13a84 <<a href="./e90670b775dcb6e9b68284ea5d41ca59.html">systems::S32K148EvbEthernetSystem::init()</a>+0x4c>
+
+       13b90:	f10d 0206 	add.w	r2, sp, #6
+
+       13b94:	2111      	movs	r1, #17
+
+       13b96:	4630      	mov	r0, r6
+
+       13b98:	f01c fcfa 	bl	30590 <<a href="../../../../../../../../platforms/s32k1xx/bsp/bspTja1101/src/phy/Tja1101.cpp/d91488e634ca946c5320f24f8dee5bfd.html">enetphy::Tja1101::readMiimRegister(unsigned char, unsigned short&)</a>>
+
+       13b9c:	2800      	cmp	r0, #0
+
+       13b9e:	f43f af71 	beq.w	13a84 <<a href="./e90670b775dcb6e9b68284ea5d41ca59.html">systems::S32K148EvbEthernetSystem::init()</a>+0x4c>
+
+       13ba2:	f8bd 2006 	ldrh.w	r2, [sp, #6]
+
+       13ba6:	f022 0204 	bic.w	r2, r2, #4
+
+       13baa:	b292      	uxth	r2, r2
+
+       13bac:	2111      	movs	r1, #17
+
+       13bae:	4630      	mov	r0, r6
+
+       13bb0:	f8ad 2006 	strh.w	r2, [sp, #6]
+
+       13bb4:	f01c fcd8 	bl	30568 <<a href="../../../../../../../../platforms/s32k1xx/bsp/bspTja1101/src/phy/Tja1101.cpp/303e4a3eafeadb5318aa349e73f7dbed.html">enetphy::Tja1101::writeMiimRegister(unsigned char, unsigned short)</a>>
+
+       13bb8:	2800      	cmp	r0, #0
+
+       13bba:	f47f af68 	bne.w	13a8e <<a href="./e90670b775dcb6e9b68284ea5d41ca59.html">systems::S32K148EvbEthernetSystem::init()</a>+0x56>
+
+       13bbe:	e761      	b.n	13a84 <<a href="./e90670b775dcb6e9b68284ea5d41ca59.html">systems::S32K148EvbEthernetSystem::init()</a>+0x4c>
+
+       13bc0:	20000009 	.word	0x20000009
+
+       13bc4:	0003827c 	.word	0x0003827c
+
+    </pre>
+
+    
+    <pre><a href="../../../include/systems/S32K148EvbEthernetSystem.h/9c0bf3a49ddb7f298a8467359e0a0fed.html">non-virtual thunk to systems::S32K148EvbEthernetSystem::init() (8)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 140</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 892</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    140
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                20 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    892
+                    
+                    
+                </td>
+                <td class="col_size">108</td>
+                <td><a href="../../../../bspConfiguration/src/bsp/SystemTimer/SystemTimer.cpp/35425094d4e9dc32f9e47f58106b4135.html" class="icon-function">sysDelayUs</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    120
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                40 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    784
+                    
+                    
+                </td>
+                <td class="col_size">548</td>
+                <td><a href="../../../../../../../../platforms/s32k1xx/bsp/bspTja1101/src/mdio/MdioTja1101.cpp/ef01c613d567ec78544a6e1750175912.html" class="icon-function">enetphy::MdioTja1101::transfer(unsigned long*, bool) const</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                    
+                    80
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    236
+                    
+                    
+                </td>
+                <td class="col_size">48</td>
+                <td><a href="../../../../../../../../platforms/s32k1xx/bsp/bspTja1101/src/mdio/MdioTja1101.cpp/735431b1f23e63069c3761b6410bdf89.html" class="icon-function">enetphy::MdioTja1101::miimRead(unsigned char, unsigned char, unsigned short&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>4</th>
+                <td class="col_size">
+                    
+                    56
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    188
+                    
+                    
+                </td>
+                <td class="col_size">156</td>
+                <td><a href="../../../../../../../../platforms/s32k1xx/bsp/bspTja1101/src/phy/Tja1101.cpp/7c1eb7a473dce6485ad67909700355d1.html" class="icon-function">enetphy::Tja1101::isLinkUp()</a></td>
+            </tr>
+        
+            <tr>
+                <th>5</th>
+                <td class="col_size">
+                    
+                    32
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                8 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">32</td>
+                <td><a href="../../../../../../../../platforms/s32k1xx/bsp/bspTja1101/src/phy/Tja1101.cpp/2ac1e3dfbe51be7094a3f0ff0a04757f.html" class="icon-function">enetphy::Tja1101::start()</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">24
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+            <p>No callers for this function.</p>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

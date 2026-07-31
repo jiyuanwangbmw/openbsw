@@ -1,0 +1,882 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../executables.html">executables</a></li>
+        
+        <li><a href="../../../../../referenceApp.html">referenceApp</a></li>
+        
+        <li><a href="../../../../application.html">application</a></li>
+        
+        <li><a href="../../../src.html">src</a></li>
+        
+        <li ><a href="../../systems.html">systems</a>
+            </li>
+
+        
+        <li class="active"><a href="../RoutingSystem.cpp.html">RoutingSystem.cpp</a>:25
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">systems::RoutingSystem::RoutingSystem(unsigned char, can::ICanSystem&amp;)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0000c3ac</td>
+                <td>
+    <span class="label label-success">x-module</span>
+    
+</td>
+                <td>72 (static)</td>
+                <td>712</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="../../app/app.cpp/4da5c80e94ffd100bf7197f59436fa02.html">app::startApp() (888)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (2,
+                            <span title="sum of used bytes by all callees">
+                            Σ=40
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="../../../../../../../../../../../unknown/unknown/716af30655f8f3d9b32750dca746ddfb.html">memset (16)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../libs/bsw/asyncFreeRtos/src/async/Types.cpp/fcb4700f830501fb36a46bee82cc2f7d.html">async::TimeoutType::TimeoutType() (24)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="../../../include/systems/RoutingSystem.h/8875a1fc5212c0cd523aad9ce854b156.html">non-virtual thunk to systems::RoutingSystem::execute() (8)</a></pre>
+    
+
+    <pre>
+
+    _ZN7systems13RoutingSystemC2EhRN3can10ICanSystemE():
+
+        c3ac:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
+
+    _ZN3etl14singleton_baseIN7systems13RoutingSystemEEC4ERS2_():
+
+        c3b0:	4daa      	ldr	r5, [pc, #680]	@ (c65c <<a href="./1d8191a5fef98dd7ab07451b66f7ed4e.html">systems::RoutingSystem::RoutingSystem(unsigned char, can::ICanSystem&)</a>+0x2b0>)
+
+    _ZN7systems13RoutingSystemC2EhRN3can10ICanSystemE():
+
+        c3b2:	b089      	sub	sp, #36	@ 0x24
+
+    _ZN3etl14singleton_baseIN7systems13RoutingSystemEEC4ERS2_():
+
+        c3b4:	682b      	ldr	r3, [r5, #0]
+
+    _ZN7systems13RoutingSystemC2EhRN3can10ICanSystemE():
+
+        c3b6:	9104      	str	r1, [sp, #16]
+
+        c3b8:	4604      	mov	r4, r0
+
+        c3ba:	9205      	str	r2, [sp, #20]
+
+    _ZN3etl14singleton_baseIN7systems13RoutingSystemEEC4ERS2_():
+
+        c3bc:	b11b      	cbz	r3, c3c6 <<a href="./1d8191a5fef98dd7ab07451b66f7ed4e.html">systems::RoutingSystem::RoutingSystem(unsigned char, can::ICanSystem&)</a>+0x1a>
+
+        c3be:	4ba8      	ldr	r3, [pc, #672]	@ (c660 <<a href="./1d8191a5fef98dd7ab07451b66f7ed4e.html">systems::RoutingSystem::RoutingSystem(unsigned char, can::ICanSystem&)</a>+0x2b4>)
+
+        c3c0:	a807      	add	r0, sp, #28
+
+        c3c2:	681b      	ldr	r3, [r3, #0]
+
+        c3c4:	4798      	blx	r3
+
+    _ZN7systems13RoutingSystemC2EhRN3can10ICanSystemE():
+
+        c3c6:	4ba7      	ldr	r3, [pc, #668]	@ (c664 <<a href="./1d8191a5fef98dd7ab07451b66f7ed4e.html">systems::RoutingSystem::RoutingSystem(unsigned char, can::ICanSystem&)</a>+0x2b8>)
+
+        c3c8:	6023      	str	r3, [r4, #0]
+
+        c3ca:	3324      	adds	r3, #36	@ 0x24
+
+        c3cc:	60a3      	str	r3, [r4, #8]
+
+    _ZN3etl6vectorIN2io17MemoryQueueReaderINS1_11MemoryQueueILj5672ELj1416EtEEEELj1EEC4Ev():
+
+        c3ce:	f504 5334 	add.w	r3, r4, #11520	@ 0x2d00
+
+        c3d2:	f103 0028 	add.w	r0, r3, #40	@ 0x28
+
+    _ZN3etl6vectorINS_4spanIKhLj4294967295EEELj1EEC4Ev():
+
+        c3d6:	f104 0334 	add.w	r3, r4, #52	@ 0x34
+
+    _ZN3etl7ivectorINS_4spanIKhLj4294967295EEEvEC4EPS3_j():
+
+        c3da:	62e3      	str	r3, [r4, #44]	@ 0x2c
+
+        c3dc:	6323      	str	r3, [r4, #48]	@ 0x30
+
+    _ZN3etl6vectorIN2io3udp8ReceiverELj1EEC4Ev():
+
+        c3de:	f104 0348 	add.w	r3, r4, #72	@ 0x48
+
+    _ZN3etl7ivectorIN2io3udp8ReceiverEvEC4EPS3_j():
+
+        c3e2:	6423      	str	r3, [r4, #64]	@ 0x40
+
+        c3e4:	6463      	str	r3, [r4, #68]	@ 0x44
+
+    _ZN3etl11vector_baseC4Ej():
+
+        c3e6:	f504 5780 	add.w	r7, r4, #4096	@ 0x1000
+
+    _ZN3etl6vectorIN2io3udp6SenderELj1EEC4Ev():
+
+        c3ea:	f104 0380 	add.w	r3, r4, #128	@ 0x80
+
+    _ZN3etl6vectorIN2io11MemoryQueueILj5672ELj1416EtEELj1EEC4Ev():
+
+        c3ee:	f104 02ac 	add.w	r2, r4, #172	@ 0xac
+
+        c3f2:	f504 59b7 	add.w	r9, r4, #5856	@ 0x16e0
+
+    _ZN5async9QueueNodeINS_9IRunnableEEC4Ev():
+
+        c3f6:	2601      	movs	r6, #1
+
+    _ZN9lifecycle18LifecycleComponentC4Ev():
+
+        c3f8:	2100      	movs	r1, #0
+
+    _ZN3etl7ivectorIN2io3udp6SenderEvEC4EPS3_j():
+
+        c3fa:	67a3      	str	r3, [r4, #120]	@ 0x78
+
+        c3fc:	67e3      	str	r3, [r4, #124]	@ 0x7c
+
+    _ZN3etl7ivectorIN2io11MemoryQueueILj5672ELj1416EtEEvEC4EPS3_j():
+
+        c3fe:	f8c4 20a4 	str.w	r2, [r4, #164]	@ 0xa4
+
+    _ZN3etl6vectorIN7routing23PduTransportIntegrationILh1ELj1416EE18DiscardingListenerELj1EEC4Ev():
+
+        c402:	f104 0398 	add.w	r3, r4, #152	@ 0x98
+
+    _ZN3etl14singleton_baseIN7systems13RoutingSystemEEC4ERS2_():
+
+        c406:	602c      	str	r4, [r5, #0]
+
+    _ZN3etl7ivectorIN2io11MemoryQueueILj5672ELj1416EtEEvEC4EPS3_j():
+
+        c408:	9201      	str	r2, [sp, #4]
+
+    _ZN3etl11vector_baseC4Ej():
+
+        c40a:	f504 5500 	add.w	r5, r4, #8192	@ 0x2000
+
+    _ZN3etl6vectorIN2io11MemoryQueueILj5672ELj1416EtEELj1EEC4Ev():
+
+        c40e:	f109 0210 	add.w	r2, r9, #16
+
+    _ZN9lifecycle18LifecycleComponentC4Ev():
+
+        c412:	6061      	str	r1, [r4, #4]
+
+    _ZN7systems13RoutingSystemC2EhRN3can10ICanSystemE():
+
+        c414:	7421      	strb	r1, [r4, #16]
+
+    _ZN7routing23PduTransportIntegrationILh1ELj1416EEC4Ev():
+
+        c416:	7521      	strb	r1, [r4, #20]
+
+    _ZN3etl4spanIKPN3udp22AbstractDatagramSocketELj4294967295EEC4Ev():
+
+        c418:	61a1      	str	r1, [r4, #24]
+
+        c41a:	61e1      	str	r1, [r4, #28]
+
+        c41c:	6221      	str	r1, [r4, #32]
+
+        c41e:	6261      	str	r1, [r4, #36]	@ 0x24
+
+    _ZN3etl7ivectorIN7routing23PduTransportIntegrationILh1ELj1416EE18DiscardingListenerEvEC4EPS4_j():
+
+        c420:	f8c4 3090 	str.w	r3, [r4, #144]	@ 0x90
+
+        c424:	f8c4 3094 	str.w	r3, [r4, #148]	@ 0x94
+
+    _ZN5async9QueueNodeINS_9IRunnableEEC4Ev():
+
+        c428:	60e6      	str	r6, [r4, #12]
+
+    _ZN3etl11vector_baseC4Ej():
+
+        c42a:	62a6      	str	r6, [r4, #40]	@ 0x28
+
+        c42c:	63e6      	str	r6, [r4, #60]	@ 0x3c
+
+        c42e:	6766      	str	r6, [r4, #116]	@ 0x74
+
+        c430:	f8c4 608c 	str.w	r6, [r4, #140]	@ 0x8c
+
+        c434:	f8c4 60a0 	str.w	r6, [r4, #160]	@ 0xa0
+
+    _ZN3etl6vectorIN2io17MemoryQueueWriterINS1_11MemoryQueueILj5672ELj1416EtEEEELj1EEC4Ev():
+
+        c438:	f504 5a35 	add.w	sl, r4, #11584	@ 0x2d40
+
+    _ZN3etl7ivectorIN2io11MemoryQueueILj5672ELj1416EtEEvEC4EPS3_j():
+
+        c43c:	f8c7 26e8 	str.w	r2, [r7, #1768]	@ 0x6e8
+
+        c440:	9202      	str	r2, [sp, #8]
+
+    _ZN3etl6vectorIN2io17MemoryQueueReaderINS1_11MemoryQueueILj5672ELj1416EtEEEELj1EEC4Ev():
+
+        c442:	f100 020c 	add.w	r2, r0, #12
+
+    _ZN3etl11vector_baseC4Ej():
+
+        c446:	f8c7 66e4 	str.w	r6, [r7, #1764]	@ 0x6e4
+
+    _ZN3etl6vectorIN7routing26PduTransportBufferedWriterELj1EEC4Ev():
+
+        c44a:	f504 5b36 	add.w	fp, r4, #11648	@ 0x2d80
+
+    _ZN3etl11vector_baseC4Ej():
+
+        c44e:	f8c5 6d28 	str.w	r6, [r5, #3368]	@ 0xd28
+
+        c452:	f8c5 6d40 	str.w	r6, [r5, #3392]	@ 0xd40
+
+        c456:	f8c5 6d58 	str.w	r6, [r5, #3416]	@ 0xd58
+
+    _ZN3etl6vectorIN2io17MemoryQueueReaderINS1_11MemoryQueueILj5672ELj1416EtEEEELj1EEC4Ev():
+
+        c45a:	9003      	str	r0, [sp, #12]
+
+    _ZN3etl7ivectorIN2io17MemoryQueueReaderINS1_11MemoryQueueILj5672ELj1416EtEEEEvEC4EPS5_j():
+
+        c45c:	f8c5 2d2c 	str.w	r2, [r5, #3372]	@ 0xd2c
+
+    _ZN3etl6vectorIN2io17MemoryQueueReaderINS1_11MemoryQueueILj5672ELj1416EtEEEELj1EEC4Ev():
+
+        c460:	4652      	mov	r2, sl
+
+    _ZN3etl6vectorIN7routing26PduTransportBufferedWriterELj1EEC4Ev():
+
+        c462:	f10b 0314 	add.w	r3, fp, #20
+
+    _ZN3etl6vectorIN2io17MemoryQueueWriterINS1_11MemoryQueueILj5672ELj1416EtEEEELj1EEC4Ev():
+
+        c466:	46d0      	mov	r8, sl
+
+    _ZN3etl6vectorIN2io17MemoryQueueReaderINS1_11MemoryQueueILj5672ELj1416EtEEEELj1EEC4Ev():
+
+        c468:	320c      	adds	r2, #12
+
+    _ZN3etl7ivectorIN2io17MemoryQueueReaderINS1_11MemoryQueueILj5672ELj1416EtEEEEvEC4EPS5_j():
+
+        c46a:	f8c5 2d44 	str.w	r2, [r5, #3396]	@ 0xd44
+
+    _ZN3etl7ivectorIN7routing26PduTransportBufferedWriterEvEC4EPS2_j():
+
+        c46e:	f8c5 3d8c 	str.w	r3, [r5, #3468]	@ 0xd8c
+
+    _ZN3etl6vectorIN2io17MemoryQueueWriterINS1_11MemoryQueueILj5672ELj1416EtEEEELj1EEC4Ev():
+
+        c472:	f10a 0224 	add.w	r2, sl, #36	@ 0x24
+
+    _ZN3etl7ivectorIN7routing26PduTransportBufferedWriterEvEC4EPS2_j():
+
+        c476:	f8c5 3d90 	str.w	r3, [r5, #3472]	@ 0xd90
+
+    _ZN3etl6vectorIN2io17MemoryQueueWriterINS1_11MemoryQueueILj5672ELj1416EtEEEELj1EEC4Ev():
+
+        c47a:	f108 033c 	add.w	r3, r8, #60	@ 0x3c
+
+    _ZN3etl7ivectorIN2io17MemoryQueueWriterINS1_11MemoryQueueILj5672ELj1416EtEEEEvEC4EPS5_j():
+
+        c47e:	f8c5 2d5c 	str.w	r2, [r5, #3420]	@ 0xd5c
+
+        c482:	f8c5 3d74 	str.w	r3, [r5, #3444]	@ 0xd74
+
+    _ZN3etl7ivectorIN2io11MemoryQueueILj5672ELj1416EtEEvE12emplace_backIJEEERS3_DpOT_():
+
+        c486:	9801      	ldr	r0, [sp, #4]
+
+    _ZN3etl11vector_baseC4Ej():
+
+        c488:	f8c5 6d70 	str.w	r6, [r5, #3440]	@ 0xd70
+
+        c48c:	f8c5 6d88 	str.w	r6, [r5, #3464]	@ 0xd88
+
+    _ZN3etl7ivectorIN2io11MemoryQueueILj5672ELj1416EtEEvE12emplace_backIJEEERS3_DpOT_():
+
+        c490:	f241 6238 	movw	r2, #5688	@ 0x1638
+
+        c494:	f7f4 f8d3 	bl	63e <<a href="../../../../../../../../../../../unknown/unknown/716af30655f8f3d9b32750dca746ddfb.html">memset</a>>
+
+    _ZN2io11MemoryQueueILj5672ELj1416EtE6TxDataC4Ev():
+
+        c498:	f241 6328 	movw	r3, #5672	@ 0x1628
+
+        c49c:	f8c7 36e0 	str.w	r3, [r7, #1760]	@ 0x6e0
+
+    _ZN3etl7ivectorIN2io17MemoryQueueReaderINS1_11MemoryQueueILj5672ELj1416EtEEEEvE12emplace_backIJRS4_EEERS5_DpOT_():
+
+        c4a0:	f504 5135 	add.w	r1, r4, #11584	@ 0x2d40
+
+    _ZN2io11MemoryQueueILj5672ELj1416EtE6ReaderC4ERS1_():
+
+        c4a4:	9b01      	ldr	r3, [sp, #4]
+
+    _ZN3etl6vectorIN2io11MemoryQueueILj5672ELj1416EtEELj1EEC4Ev():
+
+        c4a6:	f109 0904 	add.w	r9, r9, #4
+
+    _ZN3etl7ivectorIN2io11MemoryQueueILj5672ELj1416EtEEvE12emplace_backIJEEERS3_DpOT_():
+
+        c4aa:	f8c4 90a8 	str.w	r9, [r4, #168]	@ 0xa8
+
+    _ZN2io11MemoryQueueILj5672ELj1416EtE6ReaderC4ERS1_():
+
+        c4ae:	f104 02b0 	add.w	r2, r4, #176	@ 0xb0
+
+    _ZN3etl7ivectorIN2io17MemoryQueueReaderINS1_11MemoryQueueILj5672ELj1416EtEEEEvE12emplace_backIJRS4_EEERS5_DpOT_():
+
+        c4b2:	f8c5 1d30 	str.w	r1, [r5, #3376]	@ 0xd30
+
+    _ZN2io11MemoryQueueILj5672ELj1416EtE6ReaderC4ERS1_():
+
+        c4b6:	f8c5 3d3c 	str.w	r3, [r5, #3388]	@ 0xd3c
+
+    _ZN2io11MemoryQueueILj5672ELj1416EtE6WriterC4ERS1_():
+
+        c4ba:	f8c5 3d68 	str.w	r3, [r5, #3432]	@ 0xd68
+
+    _ZN2io17MemoryQueueReaderINS_11MemoryQueueILj5672ELj1416EtEEEC4ERS2_():
+
+        c4be:	496a      	ldr	r1, [pc, #424]	@ (c668 <<a href="./1d8191a5fef98dd7ab07451b66f7ed4e.html">systems::RoutingSystem::RoutingSystem(unsigned char, can::ICanSystem&)</a>+0x2bc>)
+
+    _ZN2io17MemoryQueueWriterINS_11MemoryQueueILj5672ELj1416EtEEEC4ERS2_():
+
+        c4c0:	4b6a      	ldr	r3, [pc, #424]	@ (c66c <<a href="./1d8191a5fef98dd7ab07451b66f7ed4e.html">systems::RoutingSystem::RoutingSystem(unsigned char, can::ICanSystem&)</a>+0x2c0>)
+
+    _ZN2io17MemoryQueueReaderINS_11MemoryQueueILj5672ELj1416EtEEEC4ERS2_():
+
+        c4c2:	f8c5 1d34 	str.w	r1, [r5, #3380]	@ 0xd34
+
+    _ZN3etl6vectorIN2io17MemoryQueueWriterINS1_11MemoryQueueILj5672ELj1416EtEEEELj1EEC4Ev():
+
+        c4c6:	f108 0830 	add.w	r8, r8, #48	@ 0x30
+
+    _ZN3etl7ivectorIN2io17MemoryQueueWriterINS1_11MemoryQueueILj5672ELj1416EtEEEEvE12emplace_backIJRS4_EEERS5_DpOT_():
+
+        c4ca:	f8c5 8d60 	str.w	r8, [r5, #3424]	@ 0xd60
+
+    _ZN2io11MemoryQueueILj5672ELj1416EtE6ReaderC4ERS1_():
+
+        c4ce:	f8c5 2d38 	str.w	r2, [r5, #3384]	@ 0xd38
+
+    _ZN2io11MemoryQueueILj5672ELj1416EtE6WriterC4ERS1_():
+
+        c4d2:	f8c5 2d6c 	str.w	r2, [r5, #3436]	@ 0xd6c
+
+    _ZN2io17MemoryQueueWriterINS_11MemoryQueueILj5672ELj1416EtEEEC4ERS2_():
+
+        c4d6:	f8c5 3d64 	str.w	r3, [r5, #3428]	@ 0xd64
+
+    _ZN3etl7ivectorIN2io11MemoryQueueILj5672ELj1416EtEEvE12emplace_backIJEEERS3_DpOT_():
+
+        c4da:	f241 6238 	movw	r2, #5688	@ 0x1638
+
+        c4de:	2100      	movs	r1, #0
+
+        c4e0:	f507 60de 	add.w	r0, r7, #1776	@ 0x6f0
+
+        c4e4:	f7f4 f8ab 	bl	63e <<a href="../../../../../../../../../../../unknown/unknown/716af30655f8f3d9b32750dca746ddfb.html">memset</a>>
+
+    _ZN2io11MemoryQueueILj5672ELj1416EtE6TxDataC4Ev():
+
+        c4e8:	f241 6328 	movw	r3, #5672	@ 0x1628
+
+        c4ec:	f8c5 3d24 	str.w	r3, [r5, #3364]	@ 0xd24
+
+    _ZN3etl7ivectorIN2io11MemoryQueueILj5672ELj1416EtEEvE12emplace_backIJEEERS3_DpOT_():
+
+        c4f0:	9803      	ldr	r0, [sp, #12]
+
+    _ZN2io11MemoryQueueILj5672ELj1416EtE6ReaderC4ERS1_():
+
+        c4f2:	9b02      	ldr	r3, [sp, #8]
+
+    _ZN2io17MemoryQueueReaderINS_11MemoryQueueILj5672ELj1416EtEEEC4ERS2_():
+
+        c4f4:	495c      	ldr	r1, [pc, #368]	@ (c668 <<a href="./1d8191a5fef98dd7ab07451b66f7ed4e.html">systems::RoutingSystem::RoutingSystem(unsigned char, can::ICanSystem&)</a>+0x2bc>)
+
+    _ZN3etl7ivectorIN2io11MemoryQueueILj5672ELj1416EtEEvE12emplace_backIJEEERS3_DpOT_():
+
+        c4f6:	f8c7 06ec 	str.w	r0, [r7, #1772]	@ 0x6ec
+
+    _ZN7routing11IntegrationILh1ELh1ELh0ELj72ELj72ELj72EEC4Ev():
+
+        c4fa:	f504 5840 	add.w	r8, r4, #12288	@ 0x3000
+
+    _ZN2io17MemoryQueueReaderINS_11MemoryQueueILj5672ELj1416EtEEEC4ERS2_():
+
+        c4fe:	f8c5 1d4c 	str.w	r1, [r5, #3404]	@ 0xd4c
+
+    _ZN2io11MemoryQueueILj5672ELj1416EtE6ReaderC4ERS1_():
+
+        c502:	f8c5 3d54 	str.w	r3, [r5, #3412]	@ 0xd54
+
+    _ZN2io11MemoryQueueILj5672ELj1416EtE6WriterC4ERS1_():
+
+        c506:	f8c5 3d80 	str.w	r3, [r5, #3456]	@ 0xd80
+
+    _ZN2io17MemoryQueueWriterINS_11MemoryQueueILj5672ELj1416EtEEEC4ERS2_():
+
+        c50a:	4958      	ldr	r1, [pc, #352]	@ (c66c <<a href="./1d8191a5fef98dd7ab07451b66f7ed4e.html">systems::RoutingSystem::RoutingSystem(unsigned char, can::ICanSystem&)</a>+0x2c0>)
+
+        c50c:	f8c5 1d7c 	str.w	r1, [r5, #3452]	@ 0xd7c
+
+    _ZN2io11MemoryQueueILj5672ELj1416EtE6ReaderC4ERS1_():
+
+        c510:	f504 53b7 	add.w	r3, r4, #5856	@ 0x16e0
+
+    _ZN7routing11IntegrationILh1ELh1ELh0ELj72ELj72ELj72EEC4Ev():
+
+        c514:	2100      	movs	r1, #0
+
+        c516:	22ff      	movs	r2, #255	@ 0xff
+
+    _ZN2io11MemoryQueueILj5672ELj1416EtE6ReaderC4ERS1_():
+
+        c518:	3314      	adds	r3, #20
+
+    _ZN3etl6vectorIN7routing26PduTransportBufferedWriterELj1EEC4Ev():
+
+        c51a:	f10b 0b08 	add.w	fp, fp, #8
+
+    _ZN3etl6vectorIN2io17MemoryQueueWriterINS1_11MemoryQueueILj5672ELj1416EtEEEELj1EEC4Ev():
+
+        c51e:	f10a 0a18 	add.w	sl, sl, #24
+
+    _ZN7routing11IntegrationILh1ELh1ELh0ELj72ELj72ELj72EEC4Ev():
+
+        c522:	f8c5 2ec8 	str.w	r2, [r5, #3784]	@ 0xec8
+
+        c526:	f8c5 2ff4 	str.w	r2, [r5, #4084]	@ 0xff4
+
+    _ZN2io11MemoryQueueILj5672ELj1416EtE6ReaderC4ERS1_():
+
+        c52a:	f8c5 3d50 	str.w	r3, [r5, #3408]	@ 0xd50
+
+    _ZN2io11MemoryQueueILj5672ELj1416EtE6WriterC4ERS1_():
+
+        c52e:	f8c5 3d84 	str.w	r3, [r5, #3460]	@ 0xd84
+
+    _ZN7routing11IntegrationILh1ELh1ELh0ELj72ELj72ELj72EEC4Ev():
+
+        c532:	f8c5 1dbc 	str.w	r1, [r5, #3516]	@ 0xdbc
+
+        c536:	f8c5 1e90 	str.w	r1, [r5, #3728]	@ 0xe90
+
+        c53a:	f8c5 1ec4 	str.w	r1, [r5, #3780]	@ 0xec4
+
+        c53e:	f8c5 1ecc 	str.w	r1, [r5, #3788]	@ 0xecc
+
+        c542:	f8c5 1ed0 	str.w	r1, [r5, #3792]	@ 0xed0
+
+        c546:	f8c5 1f94 	str.w	r1, [r5, #3988]	@ 0xf94
+
+        c54a:	f8c5 1ff0 	str.w	r1, [r5, #4080]	@ 0xff0
+
+        c54e:	f8c5 1ff8 	str.w	r1, [r5, #4088]	@ 0xff8
+
+        c552:	f8c5 1ffc 	str.w	r1, [r5, #4092]	@ 0xffc
+
+    _ZN3etl7ivectorIN2io17MemoryQueueReaderINS1_11MemoryQueueILj5672ELj1416EtEEEEvE12emplace_backIJRS4_EEERS5_DpOT_():
+
+        c556:	f8c5 ad48 	str.w	sl, [r5, #3400]	@ 0xd48
+
+    _ZN3etl7ivectorIN2io17MemoryQueueWriterINS1_11MemoryQueueILj5672ELj1416EtEEEEvE12emplace_backIJRS4_EEERS5_DpOT_():
+
+        c55a:	f8c5 bd78 	str.w	fp, [r5, #3448]	@ 0xd78
+
+    _ZN7systems13RoutingSystemC2EhRN3can10ICanSystemE():
+
+        c55e:	f504 5041 	add.w	r0, r4, #12352	@ 0x3040
+
+    _ZN7routing11IntegrationILh1ELh1ELh0ELj72ELj72ELj72EEC4Ev():
+
+        c562:	f8c8 1004 	str.w	r1, [r8, #4]
+
+        c566:	f8c8 1008 	str.w	r1, [r8, #8]
+
+        c56a:	f8c8 100c 	str.w	r1, [r8, #12]
+
+        c56e:	f8c8 1010 	str.w	r1, [r8, #16]
+
+        c572:	f8c8 1014 	str.w	r1, [r8, #20]
+
+        c576:	f8c8 1018 	str.w	r1, [r8, #24]
+
+        c57a:	f8c8 101c 	str.w	r1, [r8, #28]
+
+        c57e:	f8c8 1020 	str.w	r1, [r8, #32]
+
+        c582:	f8c8 1024 	str.w	r1, [r8, #36]	@ 0x24
+
+        c586:	f8c8 1028 	str.w	r1, [r8, #40]	@ 0x28
+
+        c58a:	f8c8 102c 	str.w	r1, [r8, #44]	@ 0x2c
+
+        c58e:	f8c8 1030 	str.w	r1, [r8, #48]	@ 0x30
+
+        c592:	f8c8 1034 	str.w	r1, [r8, #52]	@ 0x34
+
+        c596:	f8c8 1038 	str.w	r1, [r8, #56]	@ 0x38
+
+        c59a:	f8c8 103c 	str.w	r1, [r8, #60]	@ 0x3c
+
+    _ZN7systems13RoutingSystemC2EhRN3can10ICanSystemE():
+
+        c59e:	f009 fc85 	bl	15eac <<a href="../../../../../../libs/bsw/asyncFreeRtos/src/async/Types.cpp/fcb4700f830501fb36a46bee82cc2f7d.html">async::TimeoutType::TimeoutType()</a>>
+
+        c5a2:	9b04      	ldr	r3, [sp, #16]
+
+        c5a4:	f888 3058 	strb.w	r3, [r8, #88]	@ 0x58
+
+    _ZN3etl6vectorIN3udp18LwipDatagramSocketELj1EEC4Ev():
+
+        c5a8:	f504 5341 	add.w	r3, r4, #12352	@ 0x3040
+
+        c5ac:	332c      	adds	r3, #44	@ 0x2c
+
+    _ZN3etl7ivectorIN3udp18LwipDatagramSocketEvEC4EPS2_j():
+
+        c5ae:	f8c8 3064 	str.w	r3, [r8, #100]	@ 0x64
+
+        c5b2:	f8c8 3068 	str.w	r3, [r8, #104]	@ 0x68
+
+    _ZN3etl6vectorIPN3udp22AbstractDatagramSocketELj1EEC4Ev():
+
+        c5b6:	f504 5343 	add.w	r3, r4, #12480	@ 0x30c0
+
+        c5ba:	332c      	adds	r3, #44	@ 0x2c
+
+    _ZN7systems13RoutingSystemC2EhRN3can10ICanSystemE():
+
+        c5bc:	9a05      	ldr	r2, [sp, #20]
+
+    _ZN3etl11pvoidvectorC4EPPvj():
+
+        c5be:	f8c8 30e4 	str.w	r3, [r8, #228]	@ 0xe4
+
+        c5c2:	f8c8 30e8 	str.w	r3, [r8, #232]	@ 0xe8
+
+    _ZN3etl6vectorIN2io11MemoryQueueILj2048ELj72EtEELj1EEC4Ev():
+
+        c5c6:	f504 5344 	add.w	r3, r4, #12544	@ 0x3100
+
+    _ZN7systems13RoutingSystemC2EhRN3can10ICanSystemE():
+
+        c5ca:	f8c8 205c 	str.w	r2, [r8, #92]	@ 0x5c
+
+    _ZN3etl6vectorIN2io11MemoryQueueILj2048ELj72EtEELj1EEC4Ev():
+
+        c5ce:	330c      	adds	r3, #12
+
+    _ZN3etl6vectorIN3udp18LwipDatagramSocketELj1EEC4Ev():
+
+        c5d0:	f504 5242 	add.w	r2, r4, #12416	@ 0x3080
+
+        c5d4:	322c      	adds	r2, #44	@ 0x2c
+
+    _ZN3etl7ivectorIN2io11MemoryQueueILj2048ELj72EtEEvEC4EPS3_j():
+
+        c5d6:	f8c8 3104 	str.w	r3, [r8, #260]	@ 0x104
+
+        c5da:	f8c8 3108 	str.w	r3, [r8, #264]	@ 0x108
+
+    _ZN3etl6vectorIN2io17MemoryQueueReaderINS1_11MemoryQueueILj2048ELj72EtEEEELj1EEC4Ev():
+
+        c5de:	f504 5364 	add.w	r3, r4, #14592	@ 0x3900
+
+    _ZN3etl7ivectorIN3udp18LwipDatagramSocketEvEC4EPS2_j():
+
+        c5e2:	f8c8 20a4 	str.w	r2, [r8, #164]	@ 0xa4
+
+        c5e6:	f8c8 20a8 	str.w	r2, [r8, #168]	@ 0xa8
+
+    _ZN3etl6vectorIN2io17MemoryQueueReaderINS1_11MemoryQueueILj2048ELj72EtEEEELj1EEC4Ev():
+
+        c5ea:	3328      	adds	r3, #40	@ 0x28
+
+    _ZN3etl6vectorIPN3udp22AbstractDatagramSocketELj1EEC4Ev():
+
+        c5ec:	f504 5243 	add.w	r2, r4, #12480	@ 0x30c0
+
+        c5f0:	323c      	adds	r2, #60	@ 0x3c
+
+    _ZN3etl7ivectorIN2io17MemoryQueueReaderINS1_11MemoryQueueILj2048ELj72EtEEEEvEC4EPS5_j():
+
+        c5f2:	f8c8 3920 	str.w	r3, [r8, #2336]	@ 0x920
+
+        c5f6:	f8c8 3924 	str.w	r3, [r8, #2340]	@ 0x924
+
+    _ZN3etl6vectorIN7systems13RoutingSystem13CanRxListenerELj1EEC4Ev():
+
+        c5fa:	3330      	adds	r3, #48	@ 0x30
+
+    _ZN3etl11pvoidvectorC4EPPvj():
+
+        c5fc:	f8c8 20f4 	str.w	r2, [r8, #244]	@ 0xf4
+
+        c600:	f8c8 20f8 	str.w	r2, [r8, #248]	@ 0xf8
+
+    _ZN3etl7ivectorIN7systems13RoutingSystem13CanRxListenerEvEC4EPS3_j():
+
+        c604:	f8c8 3950 	str.w	r3, [r8, #2384]	@ 0x950
+
+    _ZN3etl6vectorIN2io17MemoryQueueWriterINS1_11MemoryQueueILj2048ELj72EtEEEELj1EEC4Ev():
+
+        c608:	f504 5265 	add.w	r2, r4, #14656	@ 0x3940
+
+    _ZN3etl7ivectorIN7systems13RoutingSystem13CanRxListenerEvEC4EPS3_j():
+
+        c60c:	f8c8 3954 	str.w	r3, [r8, #2388]	@ 0x954
+
+    _ZN3etl8delegateIFvN7routing12ErrorHandler10StatusCodeEhmEE18invocation_elementC4EPvPFvRKS6_S3_hmE():
+
+        c610:	4b17      	ldr	r3, [pc, #92]	@ (c670 <<a href="./1d8191a5fef98dd7ab07451b66f7ed4e.html">systems::RoutingSystem::RoutingSystem(unsigned char, can::ICanSystem&)</a>+0x2c4>)
+
+    _ZN3etl7ivectorIN2io17MemoryQueueWriterINS1_11MemoryQueueILj2048ELj72EtEEEEvEC4EPS5_j():
+
+        c612:	f8c8 2938 	str.w	r2, [r8, #2360]	@ 0x938
+
+        c616:	f8c8 293c 	str.w	r2, [r8, #2364]	@ 0x93c
+
+    _ZN7systems13RoutingSystemC2EhRN3can10ICanSystemE():
+
+        c61a:	4620      	mov	r0, r4
+
+    _ZN3etl6vectorIN7systems13RoutingSystem15CanOutputWriterELj1EEC4Ev():
+
+        c61c:	f504 5266 	add.w	r2, r4, #14720	@ 0x3980
+
+    _ZN3etl11vector_baseC4Ej():
+
+        c620:	f8c8 6060 	str.w	r6, [r8, #96]	@ 0x60
+
+        c624:	f8c8 60a0 	str.w	r6, [r8, #160]	@ 0xa0
+
+        c628:	f8c8 60e0 	str.w	r6, [r8, #224]	@ 0xe0
+
+        c62c:	f8c8 60f0 	str.w	r6, [r8, #240]	@ 0xf0
+
+        c630:	f8c8 6100 	str.w	r6, [r8, #256]	@ 0x100
+
+        c634:	f8c8 691c 	str.w	r6, [r8, #2332]	@ 0x91c
+
+        c638:	f8c8 6934 	str.w	r6, [r8, #2356]	@ 0x934
+
+        c63c:	f8c8 694c 	str.w	r6, [r8, #2380]	@ 0x94c
+
+        c640:	f8c8 6974 	str.w	r6, [r8, #2420]	@ 0x974
+
+    _ZN3etl7ivectorIN7systems13RoutingSystem15CanOutputWriterEvEC4EPS3_j():
+
+        c644:	f8c8 2978 	str.w	r2, [r8, #2424]	@ 0x978
+
+        c648:	f8c8 297c 	str.w	r2, [r8, #2428]	@ 0x97c
+
+    _ZN3etl8delegateIFvN7routing12ErrorHandler10StatusCodeEhmEE18invocation_element8ptr_typeC4EPv():
+
+        c64c:	f8c8 49d8 	str.w	r4, [r8, #2520]	@ 0x9d8
+
+    _ZN3etl8delegateIFvN7routing12ErrorHandler10StatusCodeEhmEE18invocation_elementC4EPvPFvRKS6_S3_hmE():
+
+        c650:	f8c8 39dc 	str.w	r3, [r8, #2524]	@ 0x9dc
+
+    _ZN7systems13RoutingSystemC2EhRN3can10ICanSystemE():
+
+        c654:	b009      	add	sp, #36	@ 0x24
+
+        c656:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
+
+        c65a:	bf00      	nop
+
+        c65c:	20014d70 	.word	0x20014d70
+
+        c660:	20000000 	.word	0x20000000
+
+        c664:	0003c4c4 	.word	0x0003c4c4
+
+        c668:	0003c40c 	.word	0x0003c40c
+
+        c66c:	0003c428 	.word	0x0003c428
+
+        c670:	0000c6f1 	.word	0x0000c6f1
+
+    </pre>
+
+    
+    <pre><a href="./0b400bcd28097823d0c2df61f43a675f.html">systems::RoutingSystem::handleError(routing::ErrorHandler::StatusCode, unsigned char, unsigned long) (124)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+            <p>No callees for this function.</p>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 136</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 1,600</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    136
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                72 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1,600
+                    
+                    
+                </td>
+                <td class="col_size">712</td>
+                <td><a href="./1d8191a5fef98dd7ab07451b66f7ed4e.html" class="icon-function">systems::RoutingSystem::RoutingSystem(unsigned char, can::ICanSystem&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                64 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">888</td>
+                <td><a href="../../app/app.cpp/4da5c80e94ffd100bf7197f59436fa02.html" class="icon-function">app::startApp()</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

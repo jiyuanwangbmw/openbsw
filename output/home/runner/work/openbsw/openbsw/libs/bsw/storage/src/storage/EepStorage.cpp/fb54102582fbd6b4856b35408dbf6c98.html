@@ -1,0 +1,752 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../libs.html">libs</a></li>
+        
+        <li><a href="../../../../../bsw.html">bsw</a></li>
+        
+        <li><a href="../../../../storage.html">storage</a></li>
+        
+        <li><a href="../../../src.html">src</a></li>
+        
+        <li ><a href="../../storage.html">storage</a>
+            </li>
+
+        
+        <li class="active"><a href="../EepStorage.cpp.html">EepStorage.cpp</a>:94
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">storage::EepStorage::write(storage::StorageJob&amp;, storage::EepBlockConfig const&amp;, unsigned int, etl::span&lt;unsigned char, 4294967295u&gt;)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0002dafc</td>
+                <td>
+    
+    
+</td>
+                <td>72 (static)</td>
+                <td>432</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="./33d6fb1375314aad1b9d63dfc50e5311.html">storage::EepStorage::process(storage::StorageJob&amp;) (164)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (3,
+                            <span title="sum of used bytes by all callees">
+                            Σ=144
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="../../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy (28)</a>
+                    
+                        ,
+                    
+                
+                    <a href="./648e573350541451df8dbd5ef7adb4ab.html">(anonymous namespace)::isCrcValid(etl::span&lt;unsigned char const, 4294967295u&gt;, unsigned char const*) (100)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../../../../../../unknown/unknown/716af30655f8f3d9b32750dca746ddfb.html">memset (16)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="./95ae228e68a6704b270328f8a3d1e091.html">storage::EepStorage::EepStorage(storage::EepBlockConfig const*, unsigned int, eeprom::IEepromDriver&amp;, etl::span&lt;unsigned char, 4294967295u&gt;, unsigned int, unsigned int) (40)</a></pre>
+    
+
+    <pre>
+
+    storage::EepStorage::write(storage::StorageJob&, storage::EepBlockConfig const&, unsigned int, etl::span<unsigned char, 4294967295u>):
+
+       2dafc:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
+
+       2db00:	461f      	mov	r7, r3
+
+    _ZN3etl15private_variant15is_same_type_inIN7storage10StorageJob4Type5WriteES5_NS4_4ReadEJEEENS_9enable_ifIXsrNS_7is_sameIT_T0_EE5valueEbE4typeEj():
+
+       2db02:	69d3      	ldr	r3, [r2, #28]
+
+    storage::EepStorage::write(storage::StorageJob&, storage::EepBlockConfig const&, unsigned int, etl::span<unsigned char, 4294967295u>):
+
+       2db04:	b089      	sub	sp, #36	@ 0x24
+
+    _ZN3etl15private_variant15is_same_type_inIN7storage10StorageJob4Type5WriteES5_NS4_4ReadEJEEENS_9enable_ifIXsrNS_7is_sameIT_T0_EE5valueEbE4typeEj():
+
+       2db06:	2b01      	cmp	r3, #1
+
+    storage::EepStorage::write(storage::StorageJob&, storage::EepBlockConfig const&, unsigned int, etl::span<unsigned char, 4294967295u>):
+
+       2db08:	f8dd 904c 	ldr.w	r9, [sp, #76]	@ 0x4c
+
+       2db0c:	4614      	mov	r4, r2
+
+       2db0e:	4680      	mov	r8, r0
+
+       2db10:	468a      	mov	sl, r1
+
+    _ZN3etl15private_variant15is_same_type_inIN7storage10StorageJob4Type5WriteES5_NS4_4ReadEJEEENS_9enable_ifIXsrNS_7is_sameIT_T0_EE5valueEbE4typeEj():
+
+       2db12:	d003      	beq.n	2db1c <<a href="./fb54102582fbd6b4856b35408dbf6c98.html">storage::EepStorage::write(storage::StorageJob&, storage::EepBlockConfig const&, unsigned int, etl::span<unsigned char, 4294967295u>)</a>+0x20>
+
+    _ZN3etl3getIN7storage10StorageJob4Type5WriteEJNS3_4NoneES4_NS3_4ReadEEEERT_RNS_7variantIJDpT0_EEE():
+
+       2db14:	4b63      	ldr	r3, [pc, #396]	@ (2dca4 <<a href="./fb54102582fbd6b4856b35408dbf6c98.html">storage::EepStorage::write(storage::StorageJob&, storage::EepBlockConfig const&, unsigned int, etl::span<unsigned char, 4294967295u>)</a>+0x1a8>)
+
+       2db16:	a807      	add	r0, sp, #28
+
+       2db18:	681b      	ldr	r3, [r3, #0]
+
+       2db1a:	4798      	blx	r3
+
+    _ZNK7storage10StorageJob4Type5Write9getOffsetEv():
+
+       2db1c:	6966      	ldr	r6, [r4, #20]
+
+    storage::EepStorage::write(storage::StorageJob&, storage::EepBlockConfig const&, unsigned int, etl::span<unsigned char, 4294967295u>):
+
+       2db1e:	88bb      	ldrh	r3, [r7, #4]
+
+       2db20:	42b3      	cmp	r3, r6
+
+       2db22:	d91a      	bls.n	2db5a <<a href="./fb54102582fbd6b4856b35408dbf6c98.html">storage::EepStorage::write(storage::StorageJob&, storage::EepBlockConfig const&, unsigned int, etl::span<unsigned char, 4294967295u>)</a>+0x5e>
+
+    _ZNK3etl4spanIhLj4294967295EE4dataEv():
+
+       2db24:	f8d9 2000 	ldr.w	r2, [r9]
+
+    storage::EepStorage::write(storage::StorageJob&, storage::EepBlockConfig const&, unsigned int, etl::span<unsigned char, 4294967295u>):
+
+       2db28:	f8da 301c 	ldr.w	r3, [sl, #28]
+
+       2db2c:	f8da 1018 	ldr.w	r1, [sl, #24]
+
+    _ZNK3etl4spanIhLj4294967295EE4dataEv():
+
+       2db30:	9200      	str	r2, [sp, #0]
+
+    storage::EepStorage::write(storage::StorageJob&, storage::EepBlockConfig const&, unsigned int, etl::span<unsigned char, 4294967295u>):
+
+       2db32:	18d3      	adds	r3, r2, r3
+
+       2db34:	9301      	str	r3, [sp, #4]
+
+       2db36:	79bb      	ldrb	r3, [r7, #6]
+
+       2db38:	9103      	str	r1, [sp, #12]
+
+       2db3a:	440a      	add	r2, r1
+
+       2db3c:	9202      	str	r2, [sp, #8]
+
+       2db3e:	2b00      	cmp	r3, #0
+
+       2db40:	d073      	beq.n	2dc2a <<a href="./fb54102582fbd6b4856b35408dbf6c98.html">storage::EepStorage::write(storage::StorageJob&, storage::EepBlockConfig const&, unsigned int, etl::span<unsigned char, 4294967295u>)</a>+0x12e>
+
+       2db42:	9a00      	ldr	r2, [sp, #0]
+
+       2db44:	f8da 000c 	ldr.w	r0, [sl, #12]
+
+    _ZNK3etl4spanIhLj4294967295EE4sizeEv():
+
+       2db48:	f8d9 3004 	ldr.w	r3, [r9, #4]
+
+    storage::EepStorage::write(storage::StorageJob&, storage::EepBlockConfig const&, unsigned int, etl::span<unsigned char, 4294967295u>):
+
+       2db4c:	6839      	ldr	r1, [r7, #0]
+
+       2db4e:	1a9b      	subs	r3, r3, r2
+
+       2db50:	6802      	ldr	r2, [r0, #0]
+
+       2db52:	6895      	ldr	r5, [r2, #8]
+
+       2db54:	9a00      	ldr	r2, [sp, #0]
+
+       2db56:	47a8      	blx	r5
+
+       2db58:	b130      	cbz	r0, 2db68 <<a href="./fb54102582fbd6b4856b35408dbf6c98.html">storage::EepStorage::write(storage::StorageJob&, storage::EepBlockConfig const&, unsigned int, etl::span<unsigned char, 4294967295u>)</a>+0x6c>
+
+    _ZN3etl15private_variant12variant_baseILb0EJN7storage10StorageJob6Result4InitENS4_5ErrorENS4_8DataLossENS4_7SuccessEEEC4Ej():
+
+       2db5a:	2301      	movs	r3, #1
+
+       2db5c:	f8c8 3004 	str.w	r3, [r8, #4]
+
+    storage::EepStorage::write(storage::StorageJob&, storage::EepBlockConfig const&, unsigned int, etl::span<unsigned char, 4294967295u>):
+
+       2db60:	4640      	mov	r0, r8
+
+       2db62:	b009      	add	sp, #36	@ 0x24
+
+       2db64:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
+
+    _ZN3etl6copy_nIPKhjPhEET1_T_T0_S4_():
+
+       2db68:	9a03      	ldr	r2, [sp, #12]
+
+       2db6a:	9b00      	ldr	r3, [sp, #0]
+
+    _ZN3etl22private_unaligned_type22unaligned_type_storageILj2EEC4Ev():
+
+       2db6c:	f8ad 0018 	strh.w	r0, [sp, #24]
+
+    _ZN3etl6copy_nIPKhjPhEET1_T_T0_S4_():
+
+       2db70:	5c9b      	ldrb	r3, [r3, r2]
+
+       2db72:	f88d 3018 	strb.w	r3, [sp, #24]
+
+       2db76:	9b02      	ldr	r3, [sp, #8]
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj2ELi4321ELb1EE19copy_store_to_valueItEEvPKhRT_():
+
+       2db78:	2202      	movs	r2, #2
+
+    _ZN3etl6copy_nIPKhjPhEET1_T_T0_S4_():
+
+       2db7a:	785b      	ldrb	r3, [r3, #1]
+
+    _ZNK3etl14unaligned_typeItLi4321EEcvtEv():
+
+       2db7c:	f8ad 001c 	strh.w	r0, [sp, #28]
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj2ELi4321ELb1EE19copy_store_to_valueItEEvPKhRT_():
+
+       2db80:	a906      	add	r1, sp, #24
+
+       2db82:	a807      	add	r0, sp, #28
+
+    _ZN3etl6copy_nIPKhjPhEET1_T_T0_S4_():
+
+       2db84:	f88d 3019 	strb.w	r3, [sp, #25]
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj2ELi4321ELb1EE19copy_store_to_valueItEEvPKhRT_():
+
+       2db88:	f7d2 fd4b 	bl	622 <<a href="../../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy</a>>
+
+    _ZN3etl13reverse_bytesItEENS_9enable_ifIXaaaasrNS_11is_integralIT_EE5valuesrNS_11is_unsignedIS3_EE5valueeqsrNS_15integral_limitsIS3_EE4bitsLj16EES3_E4typeES3_():
+
+       2db8c:	f8bd 301c 	ldrh.w	r3, [sp, #28]
+
+    _ZN3etl3minItNS_4lessItEEEERKT_S5_S5_T0_():
+
+       2db90:	88ba      	ldrh	r2, [r7, #4]
+
+    storage::EepStorage::write(storage::StorageJob&, storage::EepBlockConfig const&, unsigned int, etl::span<unsigned char, 4294967295u>):
+
+       2db92:	9801      	ldr	r0, [sp, #4]
+
+    _ZN3etl13reverse_bytesItEENS_9enable_ifIXaaaasrNS_11is_integralIT_EE5valuesrNS_11is_unsignedIS3_EE5valueeqsrNS_15integral_limitsIS3_EE4bitsLj16EES3_E4typeES3_():
+
+       2db94:	ba5b      	rev16	r3, r3
+
+       2db96:	b29b      	uxth	r3, r3
+
+    _ZN3etl3minItNS_4lessItEEEERKT_S5_S5_T0_():
+
+       2db98:	429a      	cmp	r2, r3
+
+       2db9a:	bf28      	it	cs
+
+       2db9c:	461a      	movcs	r2, r3
+
+       2db9e:	4613      	mov	r3, r2
+
+    storage::EepStorage::write(storage::StorageJob&, storage::EepBlockConfig const&, unsigned int, etl::span<unsigned char, 4294967295u>):
+
+       2dba0:	4601      	mov	r1, r0
+
+    _ZN3etl3minItNS_4lessItEEEERKT_S5_S5_T0_():
+
+       2dba2:	9205      	str	r2, [sp, #20]
+
+    storage::EepStorage::write(storage::StorageJob&, storage::EepBlockConfig const&, unsigned int, etl::span<unsigned char, 4294967295u>):
+
+       2dba4:	4419      	add	r1, r3
+
+       2dba6:	f8d9 2000 	ldr.w	r2, [r9]
+
+       2dbaa:	f7ff ff61 	bl	2da70 <<a href="./648e573350541451df8dbd5ef7adb4ab.html">(anonymous namespace)::isCrcValid(etl::span<unsigned char const, 4294967295u>, unsigned char const*)</a>.isra.0>
+
+       2dbae:	2800      	cmp	r0, #0
+
+       2dbb0:	d036      	beq.n	2dc20 <<a href="./fb54102582fbd6b4856b35408dbf6c98.html">storage::EepStorage::write(storage::StorageJob&, storage::EepBlockConfig const&, unsigned int, etl::span<unsigned char, 4294967295u>)</a>+0x124>
+
+    _ZNK7storage10StorageJob4Type5Write9getBufferEv():
+
+       2dbb2:	6925      	ldr	r5, [r4, #16]
+
+    storage::EepStorage::write(storage::StorageJob&, storage::EepBlockConfig const&, unsigned int, etl::span<unsigned char, 4294967295u>):
+
+       2dbb4:	2d00      	cmp	r5, #0
+
+       2dbb6:	d0d0      	beq.n	2db5a <<a href="./fb54102582fbd6b4856b35408dbf6c98.html">storage::EepStorage::write(storage::StorageJob&, storage::EepBlockConfig const&, unsigned int, etl::span<unsigned char, 4294967295u>)</a>+0x5e>
+
+       2dbb8:	f8cd a010 	str.w	sl, [sp, #16]
+
+       2dbbc:	f04f 0b00 	mov.w	fp, #0
+
+       2dbc0:	46ca      	mov	sl, r9
+
+       2dbc2:	f8dd 9048 	ldr.w	r9, [sp, #72]	@ 0x48
+
+       2dbc6:	e007      	b.n	2dbd8 <<a href="./fb54102582fbd6b4856b35408dbf6c98.html">storage::EepStorage::write(storage::StorageJob&, storage::EepBlockConfig const&, unsigned int, etl::span<unsigned char, 4294967295u>)</a>+0xdc>
+
+    _ZN3etl8mem_copyIhEEPT_PKS1_jS2_():
+
+       2dbc8:	f8da 3000 	ldr.w	r3, [sl]
+
+       2dbcc:	4418      	add	r0, r3
+
+       2dbce:	f7d2 fd28 	bl	622 <<a href="../../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy</a>>
+
+    _ZNK4util6buffer12LinkedBufferIKhE7getNextEv():
+
+       2dbd2:	68ad      	ldr	r5, [r5, #8]
+
+    storage::EepStorage::write(storage::StorageJob&, storage::EepBlockConfig const&, unsigned int, etl::span<unsigned char, 4294967295u>):
+
+       2dbd4:	44a3      	add	fp, r4
+
+       2dbd6:	b15d      	cbz	r5, 2dbf0 <<a href="./fb54102582fbd6b4856b35408dbf6c98.html">storage::EepStorage::write(storage::StorageJob&, storage::EepBlockConfig const&, unsigned int, etl::span<unsigned char, 4294967295u>)</a>+0xf4>
+
+    _ZNK3etl4spanIKhLj4294967295EE4sizeEv():
+
+       2dbd8:	e9d5 1400 	ldrd	r1, r4, [r5]
+
+    storage::EepStorage::write(storage::StorageJob&, storage::EepBlockConfig const&, unsigned int, etl::span<unsigned char, 4294967295u>):
+
+       2dbdc:	f8b7 c004 	ldrh.w	ip, [r7, #4]
+
+    _ZNK3etl4spanIKhLj4294967295EE4sizeEv():
+
+       2dbe0:	1a64      	subs	r4, r4, r1
+
+    storage::EepStorage::write(storage::StorageJob&, storage::EepBlockConfig const&, unsigned int, etl::span<unsigned char, 4294967295u>):
+
+       2dbe2:	4630      	mov	r0, r6
+
+       2dbe4:	4426      	add	r6, r4
+
+       2dbe6:	4566      	cmp	r6, ip
+
+    _ZN3etl8mem_copyIhEEPT_PKS1_jS2_():
+
+       2dbe8:	4622      	mov	r2, r4
+
+    storage::EepStorage::write(storage::StorageJob&, storage::EepBlockConfig const&, unsigned int, etl::span<unsigned char, 4294967295u>):
+
+       2dbea:	4448      	add	r0, r9
+
+       2dbec:	d9ec      	bls.n	2dbc8 <<a href="./fb54102582fbd6b4856b35408dbf6c98.html">storage::EepStorage::write(storage::StorageJob&, storage::EepBlockConfig const&, unsigned int, etl::span<unsigned char, 4294967295u>)</a>+0xcc>
+
+       2dbee:	e7b4      	b.n	2db5a <<a href="./fb54102582fbd6b4856b35408dbf6c98.html">storage::EepStorage::write(storage::StorageJob&, storage::EepBlockConfig const&, unsigned int, etl::span<unsigned char, 4294967295u>)</a>+0x5e>
+
+       2dbf0:	46d1      	mov	r9, sl
+
+       2dbf2:	f8dd a010 	ldr.w	sl, [sp, #16]
+
+       2dbf6:	f1bb 0f00 	cmp.w	fp, #0
+
+       2dbfa:	d0ae      	beq.n	2db5a <<a href="./fb54102582fbd6b4856b35408dbf6c98.html">storage::EepStorage::write(storage::StorageJob&, storage::EepBlockConfig const&, unsigned int, etl::span<unsigned char, 4294967295u>)</a>+0x5e>
+
+       2dbfc:	79bb      	ldrb	r3, [r7, #6]
+
+       2dbfe:	b9bb      	cbnz	r3, 2dc30 <<a href="./fb54102582fbd6b4856b35408dbf6c98.html">storage::EepStorage::write(storage::StorageJob&, storage::EepBlockConfig const&, unsigned int, etl::span<unsigned char, 4294967295u>)</a>+0x134>
+
+       2dc00:	f8da 000c 	ldr.w	r0, [sl, #12]
+
+       2dc04:	9b12      	ldr	r3, [sp, #72]	@ 0x48
+
+       2dc06:	6804      	ldr	r4, [r0, #0]
+
+       2dc08:	f8d9 2000 	ldr.w	r2, [r9]
+
+       2dc0c:	6839      	ldr	r1, [r7, #0]
+
+       2dc0e:	6864      	ldr	r4, [r4, #4]
+
+       2dc10:	18f3      	adds	r3, r6, r3
+
+       2dc12:	47a0      	blx	r4
+
+       2dc14:	2800      	cmp	r0, #0
+
+       2dc16:	d1a0      	bne.n	2db5a <<a href="./fb54102582fbd6b4856b35408dbf6c98.html">storage::EepStorage::write(storage::StorageJob&, storage::EepBlockConfig const&, unsigned int, etl::span<unsigned char, 4294967295u>)</a>+0x5e>
+
+    _ZN3etl15private_variant12variant_baseILb0EJN7storage10StorageJob6Result4InitENS4_5ErrorENS4_8DataLossENS4_7SuccessEEEC4Ej():
+
+       2dc18:	2303      	movs	r3, #3
+
+       2dc1a:	f8c8 3004 	str.w	r3, [r8, #4]
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEE18construct_in_placeIS7_S7_EEvPcOT0_():
+
+       2dc1e:	e79f      	b.n	2db60 <<a href="./fb54102582fbd6b4856b35408dbf6c98.html">storage::EepStorage::write(storage::StorageJob&, storage::EepBlockConfig const&, unsigned int, etl::span<unsigned char, 4294967295u>)</a>+0x64>
+
+    _ZN3etl7mem_setIPhhEENS_9enable_ifIXaaaaaasrNS_10is_pointerIT_EE5valuentsrNS_8is_constIS4_EE5valuesrNS_11is_integralIT0_EE5valueeqstS9_Li1EES4_E4typeES4_jS9_():
+
+       2dc20:	4601      	mov	r1, r0
+
+       2dc22:	4632      	mov	r2, r6
+
+       2dc24:	9801      	ldr	r0, [sp, #4]
+
+       2dc26:	f7d2 fd0a 	bl	63e <<a href="../../../../../../../../../../../unknown/unknown/716af30655f8f3d9b32750dca746ddfb.html">memset</a>>
+
+    storage::EepStorage::write(storage::StorageJob&, storage::EepBlockConfig const&, unsigned int, etl::span<unsigned char, 4294967295u>):
+
+       2dc2a:	2300      	movs	r3, #0
+
+       2dc2c:	9305      	str	r3, [sp, #20]
+
+       2dc2e:	e7c0      	b.n	2dbb2 <<a href="./fb54102582fbd6b4856b35408dbf6c98.html">storage::EepStorage::write(storage::StorageJob&, storage::EepBlockConfig const&, unsigned int, etl::span<unsigned char, 4294967295u>)</a>+0xb6>
+
+    _ZN3etl3maxIjNS_4lessIjEEEERKT_S5_S5_T0_():
+
+       2dc30:	9c05      	ldr	r4, [sp, #20]
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj2ELi4321ELb1EE19copy_value_to_storeItEEvRKT_Ph():
+
+       2dc32:	f8dd b008 	ldr.w	fp, [sp, #8]
+
+    _ZN3etl3maxIjNS_4lessIjEEEERKT_S5_S5_T0_():
+
+       2dc36:	42b4      	cmp	r4, r6
+
+       2dc38:	bf38      	it	cc
+
+       2dc3a:	4634      	movcc	r4, r6
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj2ELi4321ELb1EE19copy_value_to_storeItEEvRKT_Ph():
+
+       2dc3c:	2202      	movs	r2, #2
+
+       2dc3e:	a907      	add	r1, sp, #28
+
+       2dc40:	4658      	mov	r0, fp
+
+    storage::EepStorage::write(storage::StorageJob&, storage::EepBlockConfig const&, unsigned int, etl::span<unsigned char, 4294967295u>):
+
+       2dc42:	f8ad 401c 	strh.w	r4, [sp, #28]
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj2ELi4321ELb1EE19copy_value_to_storeItEEvRKT_Ph():
+
+       2dc46:	f7d2 fcec 	bl	622 <<a href="../../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy</a>>
+
+    _ZN3etl4spanIKhLj4294967295EEC4IPhEET_j():
+
+       2dc4a:	9d01      	ldr	r5, [sp, #4]
+
+    _ZN3etl4swapIhEEvRT_S2_():
+
+       2dc4c:	9b03      	ldr	r3, [sp, #12]
+
+       2dc4e:	f89b 2001 	ldrb.w	r2, [fp, #1]
+
+    _ZN3etl4spanIKhLj4294967295EEC4IPhEET_j():
+
+       2dc52:	1929      	adds	r1, r5, r4
+
+    _ZN3etl4swapIhEEvRT_S2_():
+
+       2dc54:	9c00      	ldr	r4, [sp, #0]
+
+       2dc56:	f814 c003 	ldrb.w	ip, [r4, r3]
+
+       2dc5a:	54e2      	strb	r2, [r4, r3]
+
+    _ZN3etl20frame_check_sequenceINS_11private_crc10crc_policyINS1_14crc_parametersItLt4129ELt7439ELt0ELb0EEELj256EEEE3addIPKhEEvT_SA_():
+
+       2dc5c:	428d      	cmp	r5, r1
+
+    _ZN3etl4swapIhEEvRT_S2_():
+
+       2dc5e:	f88b c001 	strb.w	ip, [fp, #1]
+
+    _ZNK3etl4spanIhLj4294967295EE4dataEv():
+
+       2dc62:	f8d9 4000 	ldr.w	r4, [r9]
+
+    _ZN3etl20frame_check_sequenceINS_11private_crc10crc_policyINS1_14crc_parametersItLt4129ELt7439ELt0ELb0EEELj256EEEE3addIPKhEEvT_SA_():
+
+       2dc66:	d01a      	beq.n	2dc9e <<a href="./fb54102582fbd6b4856b35408dbf6c98.html">storage::EepStorage::write(storage::StorageJob&, storage::EepBlockConfig const&, unsigned int, etl::span<unsigned char, 4294967295u>)</a>+0x1a2>
+
+       2dc68:	480f      	ldr	r0, [pc, #60]	@ (2dca8 <<a href="./fb54102582fbd6b4856b35408dbf6c98.html">storage::EepStorage::write(storage::StorageJob&, storage::EepBlockConfig const&, unsigned int, etl::span<unsigned char, 4294967295u>)</a>+0x1ac>)
+
+    storage::EepStorage::write(storage::StorageJob&, storage::EepBlockConfig const&, unsigned int, etl::span<unsigned char, 4294967295u>):
+
+       2dc6a:	f641 530f 	movw	r3, #7439	@ 0x1d0f
+
+       2dc6e:	f815 2b01 	ldrb.w	r2, [r5], #1
+
+    crc_update_chunk<short unsigned int, 16, 8, 255, false>():
+
+       2dc72:	ea82 2213 	eor.w	r2, r2, r3, lsr #8
+
+       2dc76:	021b      	lsls	r3, r3, #8
+
+       2dc78:	f830 2012 	ldrh.w	r2, [r0, r2, lsl #1]
+
+       2dc7c:	b29b      	uxth	r3, r3
+
+    _ZN3etl20frame_check_sequenceINS_11private_crc10crc_policyINS1_14crc_parametersItLt4129ELt7439ELt0ELb0EEELj256EEEE3addIPKhEEvT_SA_():
+
+       2dc7e:	42a9      	cmp	r1, r5
+
+    crc_update_chunk<short unsigned int, 16, 8, 255, false>():
+
+       2dc80:	ea83 0302 	eor.w	r3, r3, r2
+
+    _ZN3etl20frame_check_sequenceINS_11private_crc10crc_policyINS1_14crc_parametersItLt4129ELt7439ELt0ELb0EEELj256EEEE3addIPKhEEvT_SA_():
+
+       2dc84:	d1f3      	bne.n	2dc6e <<a href="./fb54102582fbd6b4856b35408dbf6c98.html">storage::EepStorage::write(storage::StorageJob&, storage::EepBlockConfig const&, unsigned int, etl::span<unsigned char, 4294967295u>)</a>+0x172>
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj2ELi4321ELb1EE19copy_value_to_storeItEEvRKT_Ph():
+
+       2dc86:	2202      	movs	r2, #2
+
+       2dc88:	a907      	add	r1, sp, #28
+
+       2dc8a:	4620      	mov	r0, r4
+
+       2dc8c:	f8ad 301c 	strh.w	r3, [sp, #28]
+
+       2dc90:	f7d2 fcc7 	bl	622 <<a href="../../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy</a>>
+
+    _ZN3etl4swapIhEEvRT_S2_():
+
+       2dc94:	7823      	ldrb	r3, [r4, #0]
+
+       2dc96:	7862      	ldrb	r2, [r4, #1]
+
+       2dc98:	7022      	strb	r2, [r4, #0]
+
+       2dc9a:	7063      	strb	r3, [r4, #1]
+
+    storage::EepStorage::write(storage::StorageJob&, storage::EepBlockConfig const&, unsigned int, etl::span<unsigned char, 4294967295u>):
+
+       2dc9c:	e7b0      	b.n	2dc00 <<a href="./fb54102582fbd6b4856b35408dbf6c98.html">storage::EepStorage::write(storage::StorageJob&, storage::EepBlockConfig const&, unsigned int, etl::span<unsigned char, 4294967295u>)</a>+0x104>
+
+    calculateCrc():
+
+       2dc9e:	f641 530f 	movw	r3, #7439	@ 0x1d0f
+
+       2dca2:	e7f0      	b.n	2dc86 <<a href="./fb54102582fbd6b4856b35408dbf6c98.html">storage::EepStorage::write(storage::StorageJob&, storage::EepBlockConfig const&, unsigned int, etl::span<unsigned char, 4294967295u>)</a>+0x18a>
+
+       2dca4:	20000000 	.word	0x20000000
+
+       2dca8:	0003dbcc 	.word	0x0003dbcc
+
+    </pre>
+
+    
+    <pre><a href="./60b47a2f003c7197381655cebddda8bf.html">storage::EepStorage::read(storage::StorageJob&amp;, storage::EepBlockConfig const&amp;, unsigned int, etl::span&lt;unsigned char, 4294967295u&gt;) (264)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 144</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 100</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    144
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">100</td>
+                <td><a href="./648e573350541451df8dbd5ef7adb4ab.html" class="icon-function">(anonymous namespace)::isCrcValid(etl::span&lt;unsigned char const, 4294967295u&gt;, unsigned char const*)</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">120
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 120</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 596</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    120
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                72 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    596
+                    
+                    
+                </td>
+                <td class="col_size">432</td>
+                <td><a href="./fb54102582fbd6b4856b35408dbf6c98.html" class="icon-function">storage::EepStorage::write(storage::StorageJob&amp;, storage::EepBlockConfig const&amp;, unsigned int, etl::span&lt;unsigned char, 4294967295u&gt;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                48 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">164</td>
+                <td><a href="./33d6fb1375314aad1b9d63dfc50e5311.html" class="icon-function">storage::EepStorage::process(storage::StorageJob&amp;)</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

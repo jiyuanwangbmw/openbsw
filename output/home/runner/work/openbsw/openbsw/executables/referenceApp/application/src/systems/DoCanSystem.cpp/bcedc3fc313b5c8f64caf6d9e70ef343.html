@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../executables.html">executables</a></li>
+        
+        <li><a href="../../../../../referenceApp.html">referenceApp</a></li>
+        
+        <li><a href="../../../../application.html">application</a></li>
+        
+        <li><a href="../../../src.html">src</a></li>
+        
+        <li ><a href="../../systems.html">systems</a>
+            </li>
+
+        
+        <li class="active"><a href="../DoCanSystem.cpp.html">DoCanSystem.cpp</a>:113
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">docan::DoCanSystem::run()</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0000dd30</td>
+                <td>
+    
+    
+</td>
+                <td>32 (static)</td>
+                <td>96</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>No Callers</th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (3,
+                            <span title="sum of used bytes by all callees">
+                            Σ=248
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="../../../../../../libs/bsw/docan/include/docan/transport/DoCanTransportLayer.h/89e52cd1772b80465702e6611f1389b9.html">docan::DoCanTransportLayer&lt;docan::DoCanDataLinkLayer&lt;unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short&gt; &gt;::init() (104)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../libs/bsw/asyncFreeRtos/src/async/Async.cpp/f6cc267a73772db399b5446eaec541ae.html">async::scheduleAtFixedRate(unsigned char, async::IRunnable&amp;, async::TimeoutType&amp;, unsigned long, async::TimeUnit::Type) (128)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../libs/bsw/lifecycle/src/lifecycle/LifecycleComponent.cpp/2a6c4a8fcaef587365a0a8447e58c4f0.html">lifecycle::LifecycleComponent::transitionDone() (16)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="../../../../../../libs/bsw/docan/include/docan/transport/DoCanTransportLayer.h/89e52cd1772b80465702e6611f1389b9.html">docan::DoCanTransportLayer&lt;docan::DoCanDataLinkLayer&lt;unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short&gt; &gt;::init() (104)</a></pre>
+    
+
+    <pre>
+
+    docan::DoCanSystem::run():
+
+        dd30:	b5f0      	push	{r4, r5, r6, r7, lr}
+
+    _ZNK5docan28DoCanTransportLayerContainerINS_18DoCanDataLinkLayerImthLm4294967295EtEEE18getTransportLayersEv():
+
+        dd32:	f500 5700 	add.w	r7, r0, #8192	@ 0x2000
+
+    docan::DoCanSystem::run():
+
+        dd36:	b083      	sub	sp, #12
+
+    _ZNK5docan28DoCanTransportLayerContainerINS_18DoCanDataLinkLayerImthLm4294967295EtEEE18getTransportLayersEv():
+
+        dd38:	f8d7 3b18 	ldr.w	r3, [r7, #2840]	@ 0xb18
+
+    _ZN3etl7ivectorIN5docan19DoCanTransportLayerINS1_18DoCanDataLinkLayerImthLm4294967295EtEEEEvE4dataEv():
+
+        dd3c:	685c      	ldr	r4, [r3, #4]
+
+    _ZNK3etl7ivectorIN5docan19DoCanTransportLayerINS1_18DoCanDataLinkLayerImthLm4294967295EtEEEEvE4sizeEv():
+
+        dd3e:	689e      	ldr	r6, [r3, #8]
+
+    docan::DoCanSystem::run():
+
+        dd40:	42b4      	cmp	r4, r6
+
+        dd42:	4605      	mov	r5, r0
+
+        dd44:	d013      	beq.n	dd6e <<a href="./bcedc3fc313b5c8f64caf6d9e70ef343.html">docan::DoCanSystem::run()</a>+0x3e>
+
+        dd46:	6b68      	ldr	r0, [r5, #52]	@ 0x34
+
+        dd48:	6803      	ldr	r3, [r0, #0]
+
+        dd4a:	4621      	mov	r1, r4
+
+        dd4c:	681b      	ldr	r3, [r3, #0]
+
+        dd4e:	34bc      	adds	r4, #188	@ 0xbc
+
+        dd50:	4798      	blx	r3
+
+        dd52:	42a6      	cmp	r6, r4
+
+        dd54:	d1f7      	bne.n	dd46 <<a href="./bcedc3fc313b5c8f64caf6d9e70ef343.html">docan::DoCanSystem::run()</a>+0x16>
+
+        dd56:	f8d7 3b18 	ldr.w	r3, [r7, #2840]	@ 0xb18
+
+    _ZN3etl7ivectorIN5docan19DoCanTransportLayerINS1_18DoCanDataLinkLayerImthLm4294967295EtEEEEvE5beginEv():
+
+        dd5a:	685c      	ldr	r4, [r3, #4]
+
+    _ZN3etl7ivectorIN5docan19DoCanTransportLayerINS1_18DoCanDataLinkLayerImthLm4294967295EtEEEEvE3endEv():
+
+        dd5c:	689e      	ldr	r6, [r3, #8]
+
+    _ZN5docan28DoCanTransportLayerContainerINS_18DoCanDataLinkLayerImthLm4294967295EtEEE4initEv():
+
+        dd5e:	42b4      	cmp	r4, r6
+
+        dd60:	d005      	beq.n	dd6e <<a href="./bcedc3fc313b5c8f64caf6d9e70ef343.html">docan::DoCanSystem::run()</a>+0x3e>
+
+        dd62:	4620      	mov	r0, r4
+
+        dd64:	34bc      	adds	r4, #188	@ 0xbc
+
+        dd66:	f7ff ffaf 	bl	dcc8 <<a href="../../../../../../libs/bsw/docan/include/docan/transport/DoCanTransportLayer.h/89e52cd1772b80465702e6611f1389b9.html">docan::DoCanTransportLayer<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::init()</a>>
+
+        dd6a:	42a6      	cmp	r6, r4
+
+        dd6c:	d1f9      	bne.n	dd62 <<a href="./bcedc3fc313b5c8f64caf6d9e70ef343.html">docan::DoCanSystem::run()</a>+0x32>
+
+    docan::DoCanSystem::run():
+
+        dd6e:	f44f 737a 	mov.w	r3, #1000	@ 0x3e8
+
+        dd72:	7d28      	ldrb	r0, [r5, #20]
+
+        dd74:	9300      	str	r3, [sp, #0]
+
+        dd76:	f105 0218 	add.w	r2, r5, #24
+
+        dd7a:	230a      	movs	r3, #10
+
+        dd7c:	f105 010c 	add.w	r1, r5, #12
+
+        dd80:	f007 fe80 	bl	15a84 <<a href="../../../../../../libs/bsw/asyncFreeRtos/src/async/Async.cpp/f6cc267a73772db399b5446eaec541ae.html">async::scheduleAtFixedRate(unsigned char, async::IRunnable&, async::TimeoutType&, unsigned long, async::TimeUnit::Type)</a>>
+
+        dd84:	4628      	mov	r0, r5
+
+        dd86:	b003      	add	sp, #12
+
+        dd88:	e8bd 40f0 	ldmia.w	sp!, {r4, r5, r6, r7, lr}
+
+        dd8c:	f003 ba90 	b.w	112b0 <<a href="../../../../../../libs/bsw/lifecycle/src/lifecycle/LifecycleComponent.cpp/2a6c4a8fcaef587365a0a8447e58c4f0.html">lifecycle::LifecycleComponent::transitionDone()</a>>
+
+    </pre>
+
+    
+    <pre><a href="./8d209b4c7ada2e533c6136360e624eaf.html">docan::DoCanSystem::DoCanSystem(transport::ITransportSystem&amp;, can::ICanSystem&amp;, unsigned char) (396)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 96</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 436</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    96
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    436
+                    
+                    
+                </td>
+                <td class="col_size">308</td>
+                <td><a href="../../../../../../libs/3rdparty/freeRtos/include/task.h/93cf08902933433b019fa92be1247054.html" class="icon-function">xTaskGenericNotifyFromISR</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    72
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                40 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">128</td>
+                <td><a href="../../../../../../libs/bsw/asyncFreeRtos/src/async/Async.cpp/f6cc267a73772db399b5446eaec541ae.html" class="icon-function">async::scheduleAtFixedRate(unsigned char, async::IRunnable&amp;, async::TimeoutType&amp;, unsigned long, async::TimeUnit::Type)</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">32
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+            <p>No callers for this function.</p>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

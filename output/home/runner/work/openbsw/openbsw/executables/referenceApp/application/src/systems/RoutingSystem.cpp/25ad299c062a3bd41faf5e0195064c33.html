@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../executables.html">executables</a></li>
+        
+        <li><a href="../../../../../referenceApp.html">referenceApp</a></li>
+        
+        <li><a href="../../../../application.html">application</a></li>
+        
+        <li><a href="../../../src.html">src</a></li>
+        
+        <li ><a href="../../systems.html">systems</a>
+            </li>
+
+        
+        <li class="active"><a href="../RoutingSystem.cpp.html">RoutingSystem.cpp</a>:128
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">systems::RoutingSystem::shutdown()</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0000c144</td>
+                <td>
+    
+    
+</td>
+                <td>24 (static)</td>
+                <td>248</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>No Callers</th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (3,
+                            <span title="sum of used bytes by all callees">
+                            Σ=224
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="../../../../../../libs/bsw/asyncFreeRtos/src/async/Types.cpp/3decd3b646058460a8725450b13ebf07.html">async::TimeoutType::cancel() (120)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../libs/bsw/lifecycle/src/lifecycle/LifecycleComponent.cpp/2a6c4a8fcaef587365a0a8447e58c4f0.html">lifecycle::LifecycleComponent::transitionDone() (16)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../libs/bsw/util/include/util/logger/Logger.h/e675253f5bfedd299c26bd0145e28698.html">util::logger::Logger::error(unsigned char, char const*, ...) (88)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="../../../../../../libs/bsw/lwipSocket/include/lwipSocket/udp/LwipDatagramSocket.h/d0ba3884bece99464a2c78eedbb4b7d2.html">udp::LwipDatagramSocket::~LwipDatagramSocket() (16)</a></pre>
+    
+
+    <pre>
+
+    systems::RoutingSystem::shutdown():
+
+        c144:	b5f8      	push	{r3, r4, r5, r6, r7, lr}
+
+        c146:	7c03      	ldrb	r3, [r0, #16]
+
+        c148:	2b00      	cmp	r3, #0
+
+        c14a:	d065      	beq.n	c218 <<a href="./25ad299c062a3bd41faf5e0195064c33.html">systems::RoutingSystem::shutdown()</a>+0xd4>
+
+        c14c:	4604      	mov	r4, r0
+
+        c14e:	f500 5041 	add.w	r0, r0, #12352	@ 0x3040
+
+        c152:	f009 feb7 	bl	15ec4 <<a href="../../../../../../libs/bsw/asyncFreeRtos/src/async/Types.cpp/3decd3b646058460a8725450b13ebf07.html">async::TimeoutType::cancel()</a>>
+
+    _ZN7routing23PduTransportIntegrationILh1ELj1416EE7disableEv():
+
+        c156:	7d23      	ldrb	r3, [r4, #20]
+
+        c158:	2b00      	cmp	r3, #0
+
+        c15a:	d061      	beq.n	c220 <<a href="./25ad299c062a3bd41faf5e0195064c33.html">systems::RoutingSystem::shutdown()</a>+0xdc>
+
+        c15c:	6b22      	ldr	r2, [r4, #48]	@ 0x30
+
+        c15e:	6ae3      	ldr	r3, [r4, #44]	@ 0x2c
+
+        c160:	429a      	cmp	r2, r3
+
+        c162:	bf18      	it	ne
+
+        c164:	2500      	movne	r5, #0
+
+        c166:	d01c      	beq.n	c1a2 <<a href="./25ad299c062a3bd41faf5e0195064c33.html">systems::RoutingSystem::shutdown()</a>+0x5e>
+
+        c168:	6a23      	ldr	r3, [r4, #32]
+
+        c16a:	f853 3025 	ldr.w	r3, [r3, r5, lsl #2]
+
+        c16e:	00ae      	lsls	r6, r5, #2
+
+        c170:	4618      	mov	r0, r3
+
+        c172:	b143      	cbz	r3, c186 <<a href="./25ad299c062a3bd41faf5e0195064c33.html">systems::RoutingSystem::shutdown()</a>+0x42>
+
+        c174:	681b      	ldr	r3, [r3, #0]
+
+        c176:	699b      	ldr	r3, [r3, #24]
+
+        c178:	4798      	blx	r3
+
+        c17a:	6a23      	ldr	r3, [r4, #32]
+
+        c17c:	f853 0025 	ldr.w	r0, [r3, r5, lsl #2]
+
+        c180:	6803      	ldr	r3, [r0, #0]
+
+        c182:	68db      	ldr	r3, [r3, #12]
+
+        c184:	4798      	blx	r3
+
+        c186:	69a3      	ldr	r3, [r4, #24]
+
+        c188:	599b      	ldr	r3, [r3, r6]
+
+        c18a:	4618      	mov	r0, r3
+
+        c18c:	b113      	cbz	r3, c194 <<a href="./25ad299c062a3bd41faf5e0195064c33.html">systems::RoutingSystem::shutdown()</a>+0x50>
+
+        c18e:	681b      	ldr	r3, [r3, #0]
+
+        c190:	68db      	ldr	r3, [r3, #12]
+
+        c192:	4798      	blx	r3
+
+    _ZNK3etl7ivectorINS_4spanIKhLj4294967295EEEvE4sizeEv():
+
+        c194:	6b23      	ldr	r3, [r4, #48]	@ 0x30
+
+        c196:	6ae2      	ldr	r2, [r4, #44]	@ 0x2c
+
+    _ZN7routing23PduTransportIntegrationILh1ELj1416EE7disableEv():
+
+        c198:	3501      	adds	r5, #1
+
+    _ZNK3etl7ivectorINS_4spanIKhLj4294967295EEEvE4sizeEv():
+
+        c19a:	1a9b      	subs	r3, r3, r2
+
+    _ZN7routing23PduTransportIntegrationILh1ELj1416EE7disableEv():
+
+        c19c:	ebb5 0fe3 	cmp.w	r5, r3, asr #3
+
+        c1a0:	d3e2      	bcc.n	c168 <<a href="./25ad299c062a3bd41faf5e0195064c33.html">systems::RoutingSystem::shutdown()</a>+0x24>
+
+    _ZN3etl7ivectorIN7routing23PduTransportIntegrationILh1ELj1416EE18DiscardingListenerEvE10initialiseEv():
+
+        c1a2:	f8d4 5090 	ldr.w	r5, [r4, #144]	@ 0x90
+
+        c1a6:	f8d4 7094 	ldr.w	r7, [r4, #148]	@ 0x94
+
+    _ZN3etl7destroyIPN7routing23PduTransportIntegrationILh1ELj1416EE18DiscardingListenerEEENS_9enable_ifIXntsrNS_25is_trivially_destructibleINS_15iterator_traitsIT_vE10value_typeEEE5valueEvE4typeES9_S9_():
+
+        c1aa:	42bd      	cmp	r5, r7
+
+        c1ac:	d00f      	beq.n	c1ce <<a href="./25ad299c062a3bd41faf5e0195064c33.html">systems::RoutingSystem::shutdown()</a>+0x8a>
+
+        c1ae:	4e1f      	ldr	r6, [pc, #124]	@ (c22c <<a href="./25ad299c062a3bd41faf5e0195064c33.html">systems::RoutingSystem::shutdown()</a>+0xe8>)
+
+        c1b0:	e002      	b.n	c1b8 <<a href="./25ad299c062a3bd41faf5e0195064c33.html">systems::RoutingSystem::shutdown()</a>+0x74>
+
+        c1b2:	3508      	adds	r5, #8
+
+        c1b4:	42af      	cmp	r7, r5
+
+        c1b6:	d008      	beq.n	c1ca <<a href="./25ad299c062a3bd41faf5e0195064c33.html">systems::RoutingSystem::shutdown()</a>+0x86>
+
+    _ZN3etl10destroy_atIN7routing23PduTransportIntegrationILh1ELj1416EE18DiscardingListenerEEENS_9enable_ifIXntsrNS_25is_trivially_destructibleIT_EE5valueEvE4typeEPS7_():
+
+        c1b8:	682b      	ldr	r3, [r5, #0]
+
+        c1ba:	685b      	ldr	r3, [r3, #4]
+
+        c1bc:	42b3      	cmp	r3, r6
+
+        c1be:	d0f8      	beq.n	c1b2 <<a href="./25ad299c062a3bd41faf5e0195064c33.html">systems::RoutingSystem::shutdown()</a>+0x6e>
+
+        c1c0:	4628      	mov	r0, r5
+
+    _ZN3etl7destroyIPN7routing23PduTransportIntegrationILh1ELj1416EE18DiscardingListenerEEENS_9enable_ifIXntsrNS_25is_trivially_destructibleINS_15iterator_traitsIT_vE10value_typeEEE5valueEvE4typeES9_S9_():
+
+        c1c2:	3508      	adds	r5, #8
+
+    _ZN3etl10destroy_atIN7routing23PduTransportIntegrationILh1ELj1416EE18DiscardingListenerEEENS_9enable_ifIXntsrNS_25is_trivially_destructibleIT_EE5valueEvE4typeEPS7_():
+
+        c1c4:	4798      	blx	r3
+
+    _ZN3etl7destroyIPN7routing23PduTransportIntegrationILh1ELj1416EE18DiscardingListenerEEENS_9enable_ifIXntsrNS_25is_trivially_destructibleINS_15iterator_traitsIT_vE10value_typeEEE5valueEvE4typeES9_S9_():
+
+        c1c6:	42af      	cmp	r7, r5
+
+        c1c8:	d1f6      	bne.n	c1b8 <<a href="./25ad299c062a3bd41faf5e0195064c33.html">systems::RoutingSystem::shutdown()</a>+0x74>
+
+    _ZN3etl7ivectorIN7routing23PduTransportIntegrationILh1ELj1416EE18DiscardingListenerEvE10initialiseEv():
+
+        c1ca:	f8d4 7090 	ldr.w	r7, [r4, #144]	@ 0x90
+
+    _ZN3etl7ivectorIN2io3udp8ReceiverEvE10initialiseEv():
+
+        c1ce:	6c25      	ldr	r5, [r4, #64]	@ 0x40
+
+        c1d0:	6c66      	ldr	r6, [r4, #68]	@ 0x44
+
+    _ZN3etl7ivectorIN2io3udp6SenderEvE10initialiseEv():
+
+        c1d2:	6fa3      	ldr	r3, [r4, #120]	@ 0x78
+
+    _ZN3etl7ivectorIN7routing23PduTransportIntegrationILh1ELj1416EE18DiscardingListenerEvE10initialiseEv():
+
+        c1d4:	f8c4 7094 	str.w	r7, [r4, #148]	@ 0x94
+
+    _ZN3etl7destroyIPN2io3udp8ReceiverEEENS_9enable_ifIXntsrNS_25is_trivially_destructibleINS_15iterator_traitsIT_vE10value_typeEEE5valueEvE4typeES8_S8_():
+
+        c1d8:	42b5      	cmp	r5, r6
+
+    _ZN3etl7ivectorIN2io3udp6SenderEvE10initialiseEv():
+
+        c1da:	67e3      	str	r3, [r4, #124]	@ 0x7c
+
+    _ZN3etl7destroyIPN2io3udp8ReceiverEEENS_9enable_ifIXntsrNS_25is_trivially_destructibleINS_15iterator_traitsIT_vE10value_typeEEE5valueEvE4typeES8_S8_():
+
+        c1dc:	d00e      	beq.n	c1fc <<a href="./25ad299c062a3bd41faf5e0195064c33.html">systems::RoutingSystem::shutdown()</a>+0xb8>
+
+        c1de:	4f14      	ldr	r7, [pc, #80]	@ (c230 <<a href="./25ad299c062a3bd41faf5e0195064c33.html">systems::RoutingSystem::shutdown()</a>+0xec>)
+
+        c1e0:	e002      	b.n	c1e8 <<a href="./25ad299c062a3bd41faf5e0195064c33.html">systems::RoutingSystem::shutdown()</a>+0xa4>
+
+        c1e2:	352c      	adds	r5, #44	@ 0x2c
+
+        c1e4:	42ae      	cmp	r6, r5
+
+        c1e6:	d008      	beq.n	c1fa <<a href="./25ad299c062a3bd41faf5e0195064c33.html">systems::RoutingSystem::shutdown()</a>+0xb6>
+
+    _ZN3etl10destroy_atIN2io3udp8ReceiverEEENS_9enable_ifIXntsrNS_25is_trivially_destructibleIT_EE5valueEvE4typeEPS6_():
+
+        c1e8:	682b      	ldr	r3, [r5, #0]
+
+        c1ea:	685b      	ldr	r3, [r3, #4]
+
+        c1ec:	42bb      	cmp	r3, r7
+
+        c1ee:	d0f8      	beq.n	c1e2 <<a href="./25ad299c062a3bd41faf5e0195064c33.html">systems::RoutingSystem::shutdown()</a>+0x9e>
+
+        c1f0:	4628      	mov	r0, r5
+
+    _ZN3etl7destroyIPN2io3udp8ReceiverEEENS_9enable_ifIXntsrNS_25is_trivially_destructibleINS_15iterator_traitsIT_vE10value_typeEEE5valueEvE4typeES8_S8_():
+
+        c1f2:	352c      	adds	r5, #44	@ 0x2c
+
+    _ZN3etl10destroy_atIN2io3udp8ReceiverEEENS_9enable_ifIXntsrNS_25is_trivially_destructibleIT_EE5valueEvE4typeEPS6_():
+
+        c1f4:	4798      	blx	r3
+
+    _ZN3etl7destroyIPN2io3udp8ReceiverEEENS_9enable_ifIXntsrNS_25is_trivially_destructibleINS_15iterator_traitsIT_vE10value_typeEEE5valueEvE4typeES8_S8_():
+
+        c1f6:	42ae      	cmp	r6, r5
+
+        c1f8:	d1f6      	bne.n	c1e8 <<a href="./25ad299c062a3bd41faf5e0195064c33.html">systems::RoutingSystem::shutdown()</a>+0xa4>
+
+    _ZN3etl7ivectorIN2io3udp8ReceiverEvE10initialiseEv():
+
+        c1fa:	6c26      	ldr	r6, [r4, #64]	@ 0x40
+
+        c1fc:	6466      	str	r6, [r4, #68]	@ 0x44
+
+    systems::RoutingSystem::shutdown():
+
+        c1fe:	f504 5540 	add.w	r5, r4, #12288	@ 0x3000
+
+        c202:	2102      	movs	r1, #2
+
+        c204:	6de8      	ldr	r0, [r5, #92]	@ 0x5c
+
+        c206:	6803      	ldr	r3, [r0, #0]
+
+        c208:	681b      	ldr	r3, [r3, #0]
+
+        c20a:	4798      	blx	r3
+
+        c20c:	6803      	ldr	r3, [r0, #0]
+
+        c20e:	f8d5 1950 	ldr.w	r1, [r5, #2384]	@ 0x950
+
+        c212:	6b9b      	ldr	r3, [r3, #56]	@ 0x38
+
+        c214:	4798      	blx	r3
+
+        c216:	4620      	mov	r0, r4
+
+        c218:	e8bd 40f8 	ldmia.w	sp!, {r3, r4, r5, r6, r7, lr}
+
+        c21c:	f005 b848 	b.w	112b0 <<a href="../../../../../../libs/bsw/lifecycle/src/lifecycle/LifecycleComponent.cpp/2a6c4a8fcaef587365a0a8447e58c4f0.html">lifecycle::LifecycleComponent::transitionDone()</a>>
+
+    _ZN7routing23PduTransportIntegrationILh1ELj1416EE7disableEv():
+
+        c220:	4b04      	ldr	r3, [pc, #16]	@ (c234 <<a href="./25ad299c062a3bd41faf5e0195064c33.html">systems::RoutingSystem::shutdown()</a>+0xf0>)
+
+        c222:	4905      	ldr	r1, [pc, #20]	@ (c238 <<a href="./25ad299c062a3bd41faf5e0195064c33.html">systems::RoutingSystem::shutdown()</a>+0xf4>)
+
+        c224:	7818      	ldrb	r0, [r3, #0]
+
+        c226:	f7fd f9f7 	bl	9618 <<a href="../../../../../../libs/bsw/util/include/util/logger/Logger.h/e675253f5bfedd299c26bd0145e28698.html">util::logger::Logger::error(unsigned char, char const*, ...)</a>>
+
+        c22a:	e7e8      	b.n	c1fe <<a href="./25ad299c062a3bd41faf5e0195064c33.html">systems::RoutingSystem::shutdown()</a>+0xba>
+
+        c22c:	0000b799 	.word	0x0000b799
+
+        c230:	0000b741 	.word	0x0000b741
+
+        c234:	20000004 	.word	0x20000004
+
+        c238:	00036c84 	.word	0x00036c84
+
+    </pre>
+
+    
+    <pre><a href="./0655d8a5bb8e286649922927de61fbd4.html">systems::RoutingSystem::execute() (360)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 92</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 156</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    92
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                48 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    156
+                    
+                    
+                </td>
+                <td class="col_size">68</td>
+                <td><a href="../../../../../../libs/bsw/util/src/util/logger/Logger.cpp/d658d7c78dcca1ca01e61ef198b3eeaa.html" class="icon-function">util::logger::Logger::doLog(unsigned char, util::logger::Level, char const*, std::__va_list)</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    44
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                20 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">88</td>
+                <td><a href="../../../../../../libs/bsw/util/include/util/logger/Logger.h/e675253f5bfedd299c26bd0145e28698.html" class="icon-function">util::logger::Logger::error(unsigned char, char const*, ...)</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">24
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+            <p>No callers for this function.</p>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

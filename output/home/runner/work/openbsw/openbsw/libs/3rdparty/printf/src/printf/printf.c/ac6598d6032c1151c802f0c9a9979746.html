@@ -1,0 +1,1089 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../libs.html">libs</a></li>
+        
+        <li><a href="../../../../../3rdparty.html">3rdparty</a></li>
+        
+        <li><a href="../../../../printf.html">printf</a></li>
+        
+        <li><a href="../../../src.html">src</a></li>
+        
+        <li ><a href="../../printf.html">printf</a>
+            </li>
+
+        
+        <li class="active"><a href="../printf.c.html">printf.c</a>:390
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">print_integer</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x00032530</td>
+                <td>
+    
+    
+</td>
+                <td>112 (static)</td>
+                <td>792</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="./6d7d630ec5529648e33ae989eebb2cb7.html">_vsnprintf (1964)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (2,
+                            <span title="sum of used bytes by all callees">
+                            Σ=208
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="./aead89a8c09454d3b52c82329b9d6539.html">out_rev_ (160)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../../../../../../unknown/unknown/1c7eb7a1a927e1255dd679ad9135aad5.html">__aeabi_uldivmod (48)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="./aead89a8c09454d3b52c82329b9d6539.html">out_rev_ (160)</a></pre>
+    
+
+    <pre>
+
+    print_integer():
+
+       32530:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
+
+       32534:	b093      	sub	sp, #76	@ 0x4c
+
+       32536:	468e      	mov	lr, r1
+
+       32538:	9e1c      	ldr	r6, [sp, #112]	@ 0x70
+
+       3253a:	9c1d      	ldr	r4, [sp, #116]	@ 0x74
+
+       3253c:	f89d 1078 	ldrb.w	r1, [sp, #120]	@ 0x78
+
+       32540:	9105      	str	r1, [sp, #20]
+
+       32542:	ea56 0104 	orrs.w	r1, r6, r4
+
+       32546:	f89d 707c 	ldrb.w	r7, [sp, #124]	@ 0x7c
+
+       3254a:	f8dd a080 	ldr.w	sl, [sp, #128]	@ 0x80
+
+       3254e:	f8dd b088 	ldr.w	fp, [sp, #136]	@ 0x88
+
+       32552:	d153      	bne.n	325fc <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0xcc>
+
+       32554:	f41b 6f80 	tst.w	fp, #1024	@ 0x400
+
+       32558:	f040 80c6 	bne.w	326e8 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x1b8>
+
+       3255c:	f02b 0b10 	bic.w	fp, fp, #16
+
+       32560:	2130      	movs	r1, #48	@ 0x30
+
+    print_integer_finalization():
+
+       32562:	f01b 0f02 	tst.w	fp, #2
+
+    print_integer():
+
+       32566:	f88d 1028 	strb.w	r1, [sp, #40]	@ 0x28
+
+       3256a:	f04f 0501 	mov.w	r5, #1
+
+       3256e:	f10d 0c28 	add.w	ip, sp, #40	@ 0x28
+
+    print_integer_finalization():
+
+       32572:	d07e      	beq.n	32672 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x142>
+
+       32574:	4555      	cmp	r5, sl
+
+       32576:	4629      	mov	r1, r5
+
+       32578:	f080 80c8 	bcs.w	3270c <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x1dc>
+
+       3257c:	1e4c      	subs	r4, r1, #1
+
+       3257e:	4464      	add	r4, ip
+
+       32580:	2630      	movs	r6, #48	@ 0x30
+
+       32582:	e004      	b.n	3258e <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x5e>
+
+       32584:	3101      	adds	r1, #1
+
+       32586:	458a      	cmp	sl, r1
+
+       32588:	f804 6f01 	strb.w	r6, [r4, #1]!
+
+       3258c:	d001      	beq.n	32592 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x62>
+
+       3258e:	2920      	cmp	r1, #32
+
+       32590:	d1f8      	bne.n	32584 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x54>
+
+       32592:	2f08      	cmp	r7, #8
+
+       32594:	f000 8091 	beq.w	326ba <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x18a>
+
+       32598:	f241 0410 	movw	r4, #4112	@ 0x1010
+
+       3259c:	ea1b 0f04 	tst.w	fp, r4
+
+       325a0:	f000 809e 	beq.w	326e0 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x1b0>
+
+       325a4:	f41b 6f80 	tst.w	fp, #1024	@ 0x400
+
+       325a8:	f040 80a4 	bne.w	326f4 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x1c4>
+
+       325ac:	2900      	cmp	r1, #0
+
+       325ae:	f040 80e7 	bne.w	32780 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x250>
+
+       325b2:	2f10      	cmp	r7, #16
+
+       325b4:	f000 811b 	beq.w	327ee <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x2be>
+
+       325b8:	2f02      	cmp	r7, #2
+
+       325ba:	f000 8110 	beq.w	327de <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x2ae>
+
+       325be:	2130      	movs	r1, #48	@ 0x30
+
+       325c0:	f88d 1028 	strb.w	r1, [sp, #40]	@ 0x28
+
+       325c4:	2101      	movs	r1, #1
+
+       325c6:	9c05      	ldr	r4, [sp, #20]
+
+       325c8:	2c00      	cmp	r4, #0
+
+       325ca:	f040 809d 	bne.w	32708 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x1d8>
+
+       325ce:	f01b 0f04 	tst.w	fp, #4
+
+       325d2:	f000 80cd 	beq.w	32770 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x240>
+
+       325d6:	252b      	movs	r5, #43	@ 0x2b
+
+       325d8:	eb0d 0401 	add.w	r4, sp, r1
+
+       325dc:	3101      	adds	r1, #1
+
+       325de:	f884 5028 	strb.w	r5, [r4, #40]	@ 0x28
+
+       325e2:	9c21      	ldr	r4, [sp, #132]	@ 0x84
+
+       325e4:	9101      	str	r1, [sp, #4]
+
+       325e6:	f8cd b00c 	str.w	fp, [sp, #12]
+
+       325ea:	9402      	str	r4, [sp, #8]
+
+       325ec:	f8cd c000 	str.w	ip, [sp]
+
+       325f0:	4671      	mov	r1, lr
+
+       325f2:	f7ff ff4d 	bl	32490 <<a href="./aead89a8c09454d3b52c82329b9d6539.html">out_rev_</a>>
+
+    print_integer():
+
+       325f6:	b013      	add	sp, #76	@ 0x4c
+
+       325f8:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
+
+       325fc:	f01b 0f20 	tst.w	fp, #32
+
+       32600:	f10d 0c28 	add.w	ip, sp, #40	@ 0x28
+
+       32604:	bf14      	ite	ne
+
+       32606:	f04f 0941 	movne.w	r9, #65	@ 0x41
+
+       3260a:	f04f 0961 	moveq.w	r9, #97	@ 0x61
+
+       3260e:	f8cd a080 	str.w	sl, [sp, #128]	@ 0x80
+
+       32612:	f1a9 090a 	sub.w	r9, r9, #10
+
+       32616:	46e0      	mov	r8, ip
+
+       32618:	2500      	movs	r5, #0
+
+       3261a:	9006      	str	r0, [sp, #24]
+
+       3261c:	f8cd e01c 	str.w	lr, [sp, #28]
+
+       32620:	9208      	str	r2, [sp, #32]
+
+       32622:	9309      	str	r3, [sp, #36]	@ 0x24
+
+       32624:	46e2      	mov	sl, ip
+
+       32626:	e003      	b.n	32630 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x100>
+
+       32628:	2d20      	cmp	r5, #32
+
+       3262a:	d017      	beq.n	3265c <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x12c>
+
+       3262c:	4606      	mov	r6, r0
+
+       3262e:	460c      	mov	r4, r1
+
+       32630:	4621      	mov	r1, r4
+
+       32632:	463a      	mov	r2, r7
+
+       32634:	2300      	movs	r3, #0
+
+       32636:	4630      	mov	r0, r6
+
+       32638:	f7ce fefe 	bl	1438 <<a href="../../../../../../../../../../../unknown/unknown/1c7eb7a1a927e1255dd679ad9135aad5.html">__aeabi_uldivmod</a>>
+
+       3263c:	b2d2      	uxtb	r2, r2
+
+       3263e:	2a09      	cmp	r2, #9
+
+       32640:	f102 0330 	add.w	r3, r2, #48	@ 0x30
+
+       32644:	bf8a      	itet	hi
+
+       32646:	444a      	addhi	r2, r9
+
+       32648:	b2da      	uxtbls	r2, r3
+
+       3264a:	b2d2      	uxtbhi	r2, r2
+
+       3264c:	42be      	cmp	r6, r7
+
+       3264e:	f174 0400 	sbcs.w	r4, r4, #0
+
+       32652:	f808 2b01 	strb.w	r2, [r8], #1
+
+       32656:	f105 0501 	add.w	r5, r5, #1
+
+       3265a:	d2e5      	bcs.n	32628 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0xf8>
+
+       3265c:	46d4      	mov	ip, sl
+
+       3265e:	9806      	ldr	r0, [sp, #24]
+
+       32660:	f8dd e01c 	ldr.w	lr, [sp, #28]
+
+       32664:	9a08      	ldr	r2, [sp, #32]
+
+       32666:	9b09      	ldr	r3, [sp, #36]	@ 0x24
+
+       32668:	f8dd a080 	ldr.w	sl, [sp, #128]	@ 0x80
+
+    print_integer_finalization():
+
+       3266c:	f01b 0f02 	tst.w	fp, #2
+
+       32670:	d180      	bne.n	32574 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x44>
+
+       32672:	9921      	ldr	r1, [sp, #132]	@ 0x84
+
+       32674:	2900      	cmp	r1, #0
+
+       32676:	f43f af7d 	beq.w	32574 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x44>
+
+       3267a:	f01b 0f01 	tst.w	fp, #1
+
+       3267e:	f43f af79 	beq.w	32574 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x44>
+
+       32682:	9905      	ldr	r1, [sp, #20]
+
+       32684:	2900      	cmp	r1, #0
+
+       32686:	d16f      	bne.n	32768 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x238>
+
+       32688:	f01b 0f0c 	tst.w	fp, #12
+
+       3268c:	d16c      	bne.n	32768 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x238>
+
+       3268e:	9921      	ldr	r1, [sp, #132]	@ 0x84
+
+       32690:	428d      	cmp	r5, r1
+
+       32692:	f4bf af6f 	bcs.w	32574 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x44>
+
+       32696:	1e6c      	subs	r4, r5, #1
+
+       32698:	f8dd 8084 	ldr.w	r8, [sp, #132]	@ 0x84
+
+       3269c:	4464      	add	r4, ip
+
+       3269e:	4629      	mov	r1, r5
+
+       326a0:	2630      	movs	r6, #48	@ 0x30
+
+       326a2:	e004      	b.n	326ae <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x17e>
+
+       326a4:	3101      	adds	r1, #1
+
+       326a6:	4541      	cmp	r1, r8
+
+       326a8:	f804 6f01 	strb.w	r6, [r4, #1]!
+
+       326ac:	d001      	beq.n	326b2 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x182>
+
+       326ae:	2920      	cmp	r1, #32
+
+       326b0:	d1f8      	bne.n	326a4 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x174>
+
+       326b2:	458a      	cmp	sl, r1
+
+       326b4:	f63f af62 	bhi.w	3257c <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x4c>
+
+       326b8:	e76b      	b.n	32592 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x62>
+
+       326ba:	428d      	cmp	r5, r1
+
+       326bc:	d229      	bcs.n	32712 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x1e2>
+
+       326be:	f41b 5f80 	tst.w	fp, #4096	@ 0x1000
+
+       326c2:	f02b 0410 	bic.w	r4, fp, #16
+
+       326c6:	d059      	beq.n	3277c <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x24c>
+
+       326c8:	f41b 6f80 	tst.w	fp, #1024	@ 0x400
+
+       326cc:	d07a      	beq.n	327c4 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x294>
+
+       326ce:	46a3      	mov	fp, r4
+
+       326d0:	2920      	cmp	r1, #32
+
+       326d2:	d086      	beq.n	325e2 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0xb2>
+
+       326d4:	468a      	mov	sl, r1
+
+       326d6:	3101      	adds	r1, #1
+
+       326d8:	44ea      	add	sl, sp
+
+       326da:	2430      	movs	r4, #48	@ 0x30
+
+       326dc:	f88a 4028 	strb.w	r4, [sl, #40]	@ 0x28
+
+       326e0:	2920      	cmp	r1, #32
+
+       326e2:	f43f af7e 	beq.w	325e2 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0xb2>
+
+       326e6:	e76e      	b.n	325c6 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x96>
+
+    print_integer():
+
+       326e8:	2f10      	cmp	r7, #16
+
+       326ea:	d037      	beq.n	3275c <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x22c>
+
+       326ec:	2500      	movs	r5, #0
+
+       326ee:	f10d 0c28 	add.w	ip, sp, #40	@ 0x28
+
+       326f2:	e7bb      	b.n	3266c <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x13c>
+
+    print_integer_finalization():
+
+       326f4:	2f10      	cmp	r7, #16
+
+       326f6:	d125      	bne.n	32744 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x214>
+
+       326f8:	f01b 0f20 	tst.w	fp, #32
+
+       326fc:	d058      	beq.n	327b0 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x280>
+
+       326fe:	2920      	cmp	r1, #32
+
+       32700:	f43f af6f 	beq.w	325e2 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0xb2>
+
+       32704:	2558      	movs	r5, #88	@ 0x58
+
+       32706:	e057      	b.n	327b8 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x288>
+
+       32708:	252d      	movs	r5, #45	@ 0x2d
+
+       3270a:	e765      	b.n	325d8 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0xa8>
+
+       3270c:	2f08      	cmp	r7, #8
+
+       3270e:	f47f af43 	bne.w	32598 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x68>
+
+       32712:	f241 0410 	movw	r4, #4112	@ 0x1010
+
+       32716:	ea1b 0f04 	tst.w	fp, r4
+
+       3271a:	d0e1      	beq.n	326e0 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x1b0>
+
+       3271c:	f41b 6f80 	tst.w	fp, #1024	@ 0x400
+
+       32720:	d1d6      	bne.n	326d0 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x1a0>
+
+       32722:	2900      	cmp	r1, #0
+
+       32724:	f43f af4b 	beq.w	325be <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x8e>
+
+       32728:	458a      	cmp	sl, r1
+
+       3272a:	d0d1      	beq.n	326d0 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x1a0>
+
+       3272c:	9c21      	ldr	r4, [sp, #132]	@ 0x84
+
+       3272e:	428c      	cmp	r4, r1
+
+       32730:	d1ce      	bne.n	326d0 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x1a0>
+
+       32732:	42a5      	cmp	r5, r4
+
+       32734:	d2cc      	bcs.n	326d0 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x1a0>
+
+       32736:	9c21      	ldr	r4, [sp, #132]	@ 0x84
+
+       32738:	f1b4 0a01 	subs.w	sl, r4, #1
+
+       3273c:	d04c      	beq.n	327d8 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x2a8>
+
+       3273e:	465c      	mov	r4, fp
+
+       32740:	46a3      	mov	fp, r4
+
+       32742:	e7c9      	b.n	326d8 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x1a8>
+
+       32744:	2f02      	cmp	r7, #2
+
+       32746:	d1c3      	bne.n	326d0 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x1a0>
+
+       32748:	2920      	cmp	r1, #32
+
+       3274a:	f43f af4a 	beq.w	325e2 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0xb2>
+
+       3274e:	468a      	mov	sl, r1
+
+       32750:	3101      	adds	r1, #1
+
+       32752:	44ea      	add	sl, sp
+
+       32754:	2462      	movs	r4, #98	@ 0x62
+
+       32756:	f88a 4028 	strb.w	r4, [sl, #40]	@ 0x28
+
+       3275a:	e7b9      	b.n	326d0 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x1a0>
+
+    print_integer():
+
+       3275c:	f02b 0b10 	bic.w	fp, fp, #16
+
+       32760:	2500      	movs	r5, #0
+
+       32762:	f10d 0c28 	add.w	ip, sp, #40	@ 0x28
+
+       32766:	e781      	b.n	3266c <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x13c>
+
+    print_integer_finalization():
+
+       32768:	9921      	ldr	r1, [sp, #132]	@ 0x84
+
+       3276a:	3901      	subs	r1, #1
+
+       3276c:	9121      	str	r1, [sp, #132]	@ 0x84
+
+       3276e:	e78e      	b.n	3268e <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x15e>
+
+       32770:	f01b 0f08 	tst.w	fp, #8
+
+       32774:	f43f af35 	beq.w	325e2 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0xb2>
+
+       32778:	2520      	movs	r5, #32
+
+       3277a:	e72d      	b.n	325d8 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0xa8>
+
+       3277c:	46a3      	mov	fp, r4
+
+       3277e:	e7af      	b.n	326e0 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x1b0>
+
+       32780:	458a      	cmp	sl, r1
+
+       32782:	d002      	beq.n	3278a <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x25a>
+
+       32784:	9c21      	ldr	r4, [sp, #132]	@ 0x84
+
+       32786:	428c      	cmp	r4, r1
+
+       32788:	d1b4      	bne.n	326f4 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x1c4>
+
+       3278a:	428d      	cmp	r5, r1
+
+       3278c:	d2b2      	bcs.n	326f4 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x1c4>
+
+       3278e:	f1b1 0a01 	subs.w	sl, r1, #1
+
+       32792:	d034      	beq.n	327fe <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x2ce>
+
+       32794:	2f10      	cmp	r7, #16
+
+       32796:	d14a      	bne.n	3282e <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x2fe>
+
+       32798:	4555      	cmp	r5, sl
+
+       3279a:	f00b 0620 	and.w	r6, fp, #32
+
+       3279e:	d24f      	bcs.n	32840 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x310>
+
+       327a0:	1e8c      	subs	r4, r1, #2
+
+       327a2:	2e00      	cmp	r6, #0
+
+       327a4:	d147      	bne.n	32836 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x306>
+
+       327a6:	2578      	movs	r5, #120	@ 0x78
+
+       327a8:	f80c 5004 	strb.w	r5, [ip, r4]
+
+       327ac:	465c      	mov	r4, fp
+
+       327ae:	e7c7      	b.n	32740 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x210>
+
+       327b0:	2920      	cmp	r1, #32
+
+       327b2:	f43f af16 	beq.w	325e2 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0xb2>
+
+       327b6:	2578      	movs	r5, #120	@ 0x78
+
+       327b8:	eb0d 0401 	add.w	r4, sp, r1
+
+       327bc:	3101      	adds	r1, #1
+
+       327be:	f884 5028 	strb.w	r5, [r4, #40]	@ 0x28
+
+       327c2:	e785      	b.n	326d0 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x1a0>
+
+       327c4:	458a      	cmp	sl, r1
+
+       327c6:	d027      	beq.n	32818 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x2e8>
+
+       327c8:	9d21      	ldr	r5, [sp, #132]	@ 0x84
+
+       327ca:	42a9      	cmp	r1, r5
+
+       327cc:	f47f af7f 	bne.w	326ce <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x19e>
+
+       327d0:	f1b5 0a01 	subs.w	sl, r5, #1
+
+       327d4:	d1b4      	bne.n	32740 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x210>
+
+       327d6:	46a3      	mov	fp, r4
+
+       327d8:	2101      	movs	r1, #1
+
+       327da:	9121      	str	r1, [sp, #132]	@ 0x84
+
+       327dc:	e6ef      	b.n	325be <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x8e>
+
+       327de:	2162      	movs	r1, #98	@ 0x62
+
+       327e0:	f88d 1028 	strb.w	r1, [sp, #40]	@ 0x28
+
+       327e4:	2130      	movs	r1, #48	@ 0x30
+
+       327e6:	f88d 1029 	strb.w	r1, [sp, #41]	@ 0x29
+
+       327ea:	2102      	movs	r1, #2
+
+       327ec:	e6eb      	b.n	325c6 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x96>
+
+       327ee:	f01b 0f20 	tst.w	fp, #32
+
+       327f2:	d10f      	bne.n	32814 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x2e4>
+
+       327f4:	f243 0178 	movw	r1, #12408	@ 0x3078
+
+       327f8:	f8ad 1028 	strh.w	r1, [sp, #40]	@ 0x28
+
+       327fc:	e7f5      	b.n	327ea <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x2ba>
+
+       327fe:	2f10      	cmp	r7, #16
+
+       32800:	d00f      	beq.n	32822 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x2f2>
+
+       32802:	2f02      	cmp	r7, #2
+
+       32804:	f47f aedb 	bne.w	325be <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x8e>
+
+       32808:	f243 0462 	movw	r4, #12386	@ 0x3062
+
+       3280c:	4639      	mov	r1, r7
+
+       3280e:	f8ad 4028 	strh.w	r4, [sp, #40]	@ 0x28
+
+       32812:	e6d8      	b.n	325c6 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x96>
+
+       32814:	2158      	movs	r1, #88	@ 0x58
+
+       32816:	e7e3      	b.n	327e0 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x2b0>
+
+       32818:	f1ba 0a01 	subs.w	sl, sl, #1
+
+       3281c:	d190      	bne.n	32740 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x210>
+
+       3281e:	46a3      	mov	fp, r4
+
+       32820:	e6cd      	b.n	325be <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x8e>
+
+       32822:	f01b 0f20 	tst.w	fp, #32
+
+       32826:	bf14      	ite	ne
+
+       32828:	2158      	movne	r1, #88	@ 0x58
+
+       3282a:	2178      	moveq	r1, #120	@ 0x78
+
+       3282c:	e7d8      	b.n	327e0 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x2b0>
+
+       3282e:	2f02      	cmp	r7, #2
+
+       32830:	d08f      	beq.n	32752 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x222>
+
+       32832:	465c      	mov	r4, fp
+
+       32834:	e784      	b.n	32740 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x210>
+
+       32836:	2558      	movs	r5, #88	@ 0x58
+
+       32838:	f80c 5004 	strb.w	r5, [ip, r4]
+
+       3283c:	465c      	mov	r4, fp
+
+       3283e:	e77f      	b.n	32740 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x210>
+
+       32840:	4651      	mov	r1, sl
+
+       32842:	2e00      	cmp	r6, #0
+
+       32844:	d0b7      	beq.n	327b6 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x286>
+
+       32846:	e75d      	b.n	32704 <<a href="./ac6598d6032c1151c802f0c9a9979746.html">print_integer</a>+0x1d4>
+
+    </pre>
+
+    
+    <pre><a href="./34be8d226a0fd9ecb36e23705a83b1ec.html">out_wrapped_function (12)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 608</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 160</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    608
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                48 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">160</td>
+                <td><a href="./aead89a8c09454d3b52c82329b9d6539.html" class="icon-function">out_rev_</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">560
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 560</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 5,572</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    560
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                112 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    5,572
+                    
+                    
+                </td>
+                <td class="col_size">792</td>
+                <td><a href="./ac6598d6032c1151c802f0c9a9979746.html" class="icon-function">print_integer</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    448
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                88 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    4,780
+                    
+                    
+                </td>
+                <td class="col_size">1,964</td>
+                <td><a href="./6d7d630ec5529648e33ae989eebb2cb7.html" class="icon-function">_vsnprintf</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                    
+                    360
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    2,816
+                    
+                    
+                </td>
+                <td class="col_size">36</td>
+                <td><a href="./5312ec35df88995f2f21271b5c68c054.html" class="icon-function">vfctprintf</a></td>
+            </tr>
+        
+            <tr>
+                <th>4</th>
+                <td class="col_size">
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    2,780
+                    
+                    
+                </td>
+                <td class="col_size">40</td>
+                <td><a href="../../../../../bsp/bspCharInputOutput/src/charInputOutput/bspIo.cpp/6c492efb4c21b9ebc4f047af3dbd3de7.html" class="icon-function">debug_printf</a></td>
+            </tr>
+        
+            <tr>
+                <th>5</th>
+                <td class="col_size">
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    2,740
+                    
+                    
+                </td>
+                <td class="col_size">12</td>
+                <td><a href="../../../../../../executables/referenceApp/platforms/s32k148evb/main/src/osHooks/freertos/osHooks.cpp/45bbe829857fb87663cdbf538f18cad7.html" class="icon-function">vApplicationStackOverflowHook</a></td>
+            </tr>
+        
+            <tr>
+                <th>6</th>
+                <td class="col_size">
+                    
+                    336
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    2,728
+                    
+                    
+                </td>
+                <td class="col_size">204</td>
+                <td><a href="../../../../freeRtos/include/task.h/14db0b8137bb15b16e9724365ccf27b8.html" class="icon-function">vTaskSwitchContext</a></td>
+            </tr>
+        
+            <tr>
+                <th>7</th>
+                <td class="col_size">
+                    
+                    320
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                32 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    2,524
+                    
+                    
+                </td>
+                <td class="col_size">208</td>
+                <td><a href="../../../../freeRtos/include/portable.h/52d65514473f95049d8347da5d7f743d.html" class="icon-function">xPortStartScheduler</a></td>
+            </tr>
+        
+            <tr>
+                <th>8</th>
+                <td class="col_size">
+                    
+                    288
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                48 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    2,316
+                    
+                    
+                </td>
+                <td class="col_size">160</td>
+                <td><a href="../../../../freeRtos/include/task.h/f63e0c737b2bc0ba20133fcf0cb62874.html" class="icon-function">vTaskStartScheduler</a></td>
+            </tr>
+        
+            <tr>
+                <th>9</th>
+                <td class="col_size">
+                    
+                    240
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                224 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    2,156
+                    
+                    
+                </td>
+                <td class="col_size">2,004</td>
+                <td><a href="../../../../../../executables/referenceApp/application/src/app/app.cpp/f0c3e37b78904f0cb22bd585a8fa9842.html" class="icon-function">app::run()</a></td>
+            </tr>
+        
+            <tr>
+                <th>10</th>
+                <td class="col_size">
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    152
+                    
+                    
+                </td>
+                <td class="col_size">20</td>
+                <td><a href="../../../../../../executables/referenceApp/application/src/main.cpp/5ca4565b9d11184b1d3b82aa1ebe323f.html" class="icon-function">app_main()</a></td>
+            </tr>
+        
+            <tr>
+                <th>11</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">132</td>
+                <td><a href="../../../../../../executables/referenceApp/platforms/s32k148evb/main/src/main.cpp/fad58de7366495db4650cfefac2fcd61.html" class="icon-function">main</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>
